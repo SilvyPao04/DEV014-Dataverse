@@ -1,378 +1,340 @@
 export default [
+  
+        
   {
-    "id": "ada-lovelace",
-    "name": "Ada Lovelace",
-    "shortDescription": "Pionera en la programación, primera programadora de la historia.",
-    "description": "Una visionaria matemática británica del siglo XIX, es aclamada como la primera programadora de la historia. Su colaboración con Charles Babbage en la creación de la Máquina Analítica la llevó a desarrollar algoritmos, incluyendo el famoso \"algoritmo de Bernoulli\", destinados a ser procesados por una máquina. Su visión pionera la convirtió en una figura fundamental en la informática y la inteligencia artificial. Lovelace demostró que las computadoras podían ir más allá de simples cálculos matemáticos, anticipando un mundo donde la programación sería esencial en la resolución de problemas complejos, dejando una huella imborrable en la ciencia y la tecnología.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/ada-lovelace.jpg",
+    "id": "frodo_bolson",
+    "name": "Frodo Bolsón",
+    "shortDescription": "Portador del Anillo Único",
+    "description": "Frodo Bolsón, un hobbit de la Comarca, es elegido para llevar el Anillo Único a Mordor y destruirlo en el Monte del Destino. A pesar de su modesta estatura, muestra una valentía extraordinaria y una determinación inquebrantable en su peligroso viaje. Su carga lo lleva al borde de la desesperación, pero su amistad con Sam y el apoyo de sus compañeros lo guían en su difícil tarea, enfrentando peligros inimaginables para salvar a la Tierra Media de la oscuridad que amenaza con consumirla. ",
+    "imageUrl": "https://example.com/frodo.jpg",
     "facts": {
-      "yearOfBirth": "1815",
-      "yearOfDeath": "1852",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/genera-una-imagen-de-ada-lovelace2c-la-primera-prog/650a1eff8ff04b88833d5cdef0309441"
+      "race": "Hobbit",
+      "age": 33,
+      "height": "1.5m",
+      "yearOfBirth": 2968
     }
   },
+
   {
-    "id": "emmy-noether",
-    "name": "Emmy Noether",
-    "shortDescription": "Matemática destacada, teorema fundamental en álgebra abstracta.",
-    "description": "Una brillante matemática alemana, revolucionó la física teórica con sus contribuciones al teorema de conservación de la energía y el teorema de Noether, fundamentales en la teoría de la relatividad y la mecánica cuántica. A pesar de los obstáculos que enfrentó como mujer en la academia, sus investigaciones en álgebra abstracta y teoría de grupos son fundamentales en la física moderna. Su capacidad para unificar conceptos matemáticos y físicos marcó un hito en la historia de la ciencia, allanando el camino para futuras generaciones de científicas.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/emmy-noether.jpg",
+    "id": "sam_gamyi",
+    "name": "Sam Gamyi",
+    "shortDescription": "Fiel compañero de Frodo",
+    "description": "Sam Gamyi, leal compañero de Frodo, demuestra una valentía y lealtad inquebrantables en su viaje para destruir el Anillo Único. Como jardinero de la Comarca, inicialmente se une a Frodo como su cocinero, pero su papel se vuelve crucial cuando se convierte en el soporte emocional y físico de Frodo en los momentos más oscuros. Su coraje y sacrificio son ejemplares, y su amor por su hogar y sus amigos lo impulsan a superar desafíos aparentemente insuperables en su búsqueda para salvar a la Tierra Media.",
+    "imageUrl": "https://example.com/sam.jpg",
     "facts": {
-      "yearOfBirth": "1882",
-      "yearOfDeath": "1935",
-      "birthPlace": "Erlangen, Alemania",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/create-an-image-of-of-a-german-woman2c-a-pioneering/6510ddb1e8254b928b8f8f1d5e95fea4"
+      "race": "Hobbit",
+      "age": 38,
+      "height": "1.4m",
+      "yearOfBirth": 2980
     }
   },
+
   {
-    "id": "hypatia-de-alejandria",
-    "name": "Hypatia de Alejandría",
-    "shortDescription": "Matemática y filósofa en la antigua Alejandría.",
-    "description": "Filósofa y matemática en la antigua Alejandría, desafió las normas de género de su época al destacar en una sociedad dominada por hombres. Su legado incluye importantes contribuciones a la geometría y la astronomía, así como su destacado papel como maestra y defensora del conocimiento en una época de agitación política. Hypatia demostró que las mujeres podían sobresalir en campos intelectuales y su valentía al mantener sus creencias filosóficas la convierte en un símbolo de resistencia y sabiduría en la historia de la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/hypatia-de-alejandria.jpg",
+    "id": "gandalf",
+    "name": "Gandalf",
+    "shortDescription": "El mago gris",
+    "description": "Gandalf, conocido como el Mago Gris, es una figura venerada y poderosa en la Tierra Media. Su sabiduría y habilidades mágicas lo convierten en un guía esencial para la Comunidad del Anillo en su lucha contra las fuerzas oscuras de Sauron. Aunque puede parecer distante y enigmático, Gandalf tiene un profundo amor por los pueblos libres y está dispuesto a arriesgar todo por su protección. Su papel como mentor y estratega es crucial en la guerra contra la oscuridad, y su sacrificio final en la batalla contra el Balrog es un acto de pura valentía y devoción.",
+    "imageUrl": "https://example.com/gandalf.jpg",
     "facts": {
-      "yearOfBirth": "circa 360",
-      "yearOfDeath": "415",
-      "birthPlace": "Alejandría, Egipto",
-      "mainField": "Matemáticas, Filosofía"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/create-a-vivid-digital-artwork-or-painting-that-de/6510df0ebe1a4807af22175452761e1a"
+      "race": "Maia",
+      "age": 2019,
+      "height": "2.1m",
+      "yearOfBirth": 1000
     }
   },
+
   {
-    "id": "marjorie-lee-browne",
-    "name": "Marjorie Lee Browne",
-    "shortDescription": "Matemática, contribuyó a la teoría de números.",
-    "description": "Matemática estadounidense, destacó en una época en la que las mujeres afroamericanas enfrentaban múltiples barreras en la educación superior. No solo obtuvo su doctorado en matemáticas, sino que también se convirtió en una destacada educadora, promoviendo la diversidad en las ciencias matemáticas y desafiando la discriminación racial y de género. Su compromiso con la educación y su capacidad para inspirar a futuras generaciones la convierten en un modelo a seguir para las mujeres en la ciencia, dejando una huella perdurable en la historia académica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marjorie-lee-browne.jpg",
+    "id": "aragorn",
+    "name": "Aragorn",
+    "shortDescription": "El heredero de Isildur",
+    "description": "Aragorn, también conocido como Strider, es un guerrero noble y valiente, destinado a reclamar su derecho como rey de Gondor. Heredero de Isildur, lleva consigo la carga de una gran responsabilidad y un legado de honor y coraje. Aunque inicialmente renuente a asumir su destino, Aragorn se convierte en un líder indiscutible de la Comunidad del Anillo, guiándola con sabiduría y determinación en su búsqueda para destruir el Anillo Único y derrotar a Sauron. Su valentía y compasión lo convierten en un héroe legendario en la historia de la Tierra Media.",
+    "imageUrl": "https://example.com/aragorn.jpg",
     "facts": {
-      "yearOfBirth": "1914",
-      "yearOfDeath": "1979",
-      "birthPlace": "Memphis, Estados Unidos",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/design-an-inspiring-and-historically-accurate-imag/6510df7e7bb745f69d67f695441607a8"
+      "race": "Hombre",
+      "age": 87,
+      "height": "1.86m",
+      "yearOfBirth": 2931
     }
   },
+
   {
-    "id": "shakuntala-devi",
-    "name": "Shakuntala Devi",
-    "shortDescription": "Matemática prodigio, conocida como la 'Calculadora Humana'.",
-    "description": "Conocida como \"la bruja de las matemáticas\" de la India, dejó una marca indeleble en el mundo de los números. Su capacidad mental asombrosa la llevó a resolver complejos cálculos matemáticos mentalmente en cuestión de segundos, estableciendo récords mundiales. Además de su talento innato, Devi promovió activamente la educación matemática y luchó por la igualdad de género en un país donde las mujeres enfrentaban desafíos en la ciencia y la educación. Su legado destaca el poder de la mente humana y la importancia de la igualdad de oportunidades en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/shakuntala-devi.jpg",
+    "id": "legolas",
+    "name": "Legolas",
+    "shortDescription": "El arquero elfo",
+    "description": "Legolas, un elfo de bosque del reino de Mirkwood, es un arquero experto y ágil guerrero. Miembro de la Comunidad del Anillo, su destreza con el arco y su agudeza visual son inigualables, haciendo de él un aliado valioso en la lucha contra las fuerzas de Sauron. Aunque a menudo se muestra reservado y serio, Legolas demuestra un profundo respeto por sus compañeros de viaje y una lealtad inquebrantable hacia su causa. Su habilidad para percibir el peligro y su habilidad en la batalla lo convierten en un activo invaluable en la misión para salvar a la Tierra Media.",
+    "imageUrl": "https://example.com/legolas.jpg",
     "facts": {
-      "yearOfBirth": "1929",
-      "yearOfDeath": "2013",
-      "birthPlace": "Bangalore, India",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/indian-woman-writing-math-problems-in-a-blackbard-/6510e19f3db54e14b365b7e8dc5045f6"
+      "race": "Elfo",
+      "age": 2931,
+      "height": "1.83m",
+      "yearOfBirth": 87
     }
   },
+
   {
-    "id": "sofia-kovalevskaya",
-    "name": "Sofia Kovalevskaya",
-    "shortDescription": "Matemática y escritora, contribuyó a la teoría de funciones.",
-    "description": "Matemática rusa del siglo XIX, dejó una marca indeleble en la ciencia del siglo XIX al desafiar las barreras de género. Como matemática rusa, superó las restricciones sociales de su época para convertirse en la primera mujer en obtener un doctorado en matemáticas en Europa. Sus contribuciones a la teoría de las ecuaciones diferenciales y la mecánica revolucionaron la disciplina, abriendo nuevas perspectivas en el análisis matemático. Su destacada membresía en la Academia de Ciencias de Suecia marcó un hito en la historia de las mujeres en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/sofia-kovalevskaya.jpg",
+    "id": "gimli",
+    "name": "Gimli",
+    "shortDescription": "El enano de Erebor",
+    "description": "Un enano de la Montaña Solitaria, es un guerrero valiente y un amigo leal. Su amor por la herencia de su pueblo lo impulsan a unirse a la Comunidad del Anillo en su peligroso viaje. Aunque a menudo se encuentra en desacuerdo con Legolas debido a la rivalidad entre elfos y enanos, Gimli demuestra un respeto profundo por sus compañeros y una disposición para sacrificar todo en la lucha contra el mal. Su fuerza y su coraje son legendarios, y su amistad con Legolas es una prueba de que lazos inquebrantables pueden formarse incluso en los momentos más oscuros.",
+    "imageUrl": "https://example.com/gimli.jpg",
     "facts": {
-      "yearOfBirth": "1850",
-      "yearOfDeath": "1891",
-      "birthPlace": "Moscú, Rusia",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/indian-woman-writing-math-problems-in-a-blackbard-/6510e19f3db54e14b365b7e8dc5045f6"
+      "race": "Enano",
+      "age": 139,
+      "height": "1.45m",
+      "yearOfBirth": 2879
     }
   },
+
   {
-    "id": "yoko-shimomura",
-    "name": "Yoko Shimomura",
-    "shortDescription": "Compositora de música, destacada en la industria de los videojuegos.",
-    "description": "Compositora japonesa, es una figura destacada en la ciencia de la música y el arte sonoro. Aunque no se dedica a la ciencia en el sentido tradicional, su trabajo en la composición musical ha requerido un profundo entendimiento de la teoría musical y la tecnología de audio. Ha contribuido de manera significativa a la industria de los videojuegos, componiendo icónicas bandas sonoras que han enriquecido la experiencia de juego. Su éxito en un campo donde las mujeres estaban subrepresentadas la convierte en un modelo a seguir, incluso en campos no convencionales como la composición musical.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/yoko-shimomura.jpg",
+    "id": "boromir",
+    "name": "Boromir",
+    "shortDescription": "Hijo de Gondor",
+    "description": "Boromir, un valiente guerrero de Gondor, es un miembro de la Comunidad del Anillo con un corazón noble pero atormentado por la sombra del poder. Lucha con la tentación de usar el Anillo Único para proteger a su pueblo, pero su determinación y coraje son innegables. Aunque cae en la tentación y enfrenta su destino trágico, su sacrificio final por sus compañeros y su arrepentimiento son un recordatorio de la fuerza del espíritu humano y la redención. Su legado perdura como un símbolo de la lucha contra el mal y la búsqueda de redención.",
+    "imageUrl": "https://example.com/boromir.jpg",
     "facts": {
-      "yearOfBirth": "1967",
-      "birthPlace": "Hyogo, Japón",
-      "mainField": "Composición Musical, Video Juegos"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/yoko-shimomura-making-music-for-a-video-game-in-19/6510e40dd1eb45d0906e8c1f4bb601d3"
+      "race": "Hombre",
+      "age": 41,
+      "height": "1.83m",
+      "yearOfBirth": 2978
     }
   },
+
   {
-    "id": "maryam-mirzakhani",
-    "name": "Maryam Mirzakhani",
-    "shortDescription": "Matemática, ganadora del Premio Fields.",
-    "description": "Matemática iraní, hizo historia al convertirse en la primera mujer en ganar la Medalla Fields, el premio más prestigioso en matemáticas. Sus investigaciones en la geometría de superficies y la teoría de las superficies de Riemann han tenido un impacto duradero en la matemática pura. A lo largo de su carrera, Mirzakhani inspiró a muchas mujeres a perseguir carreras en ciencia y matemáticas, derribando las barreras de género. Su enfoque innovador y su capacidad para resolver problemas complejos la convierten en un modelo a seguir para la comunidad científica y en un símbolo de la excelencia matemática.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/maryam-mirzakhani.jpg",
+    "id": "arwen",
+    "name": "Arwen",
+    "shortDescription": "La estrella vespertina",
+    "description": "Arwen Undómiel, una elfa noble de la estirpe de los Noldor, es conocida por su belleza y su amor por Aragorn. Su decisión de renunciar a la inmortalidad por amor es un acto de valentía y sacrificio que la define como una de las figuras más poderosas y nobles de la Tierra Media. Aunque su papel en la trama principal puede ser secundario, su influencia y su conexión con Aragorn son fundamentales para el éxito de la Comunidad del Anillo y la restauración de la paz en la Tierra Media. ",
+    "imageUrl": "https://example.com/arwen.jpg",
     "facts": {
-      "yearOfBirth": "1977",
-      "yearOfDeath": "2017",
-      "birthPlace": "Teherán, Irán",
-      "mainField": "Matemáticas"
-    },
-    "extraInfo": {
-      "imageSource": "https://chalkdustmagazine.com/features/mathematics-maryam-mirzakhani/"
+      "race": "Elfo",
+      "age": 2921,
+      "height": "1.70m",
+      "yearOfBirth": 241
     }
   },
+
   {
-    "id": "adele-goldberg",
-    "name": "Adele Goldberg",
-    "shortDescription": "Informática pionera, co-creadora del lenguaje de programación Smalltalk.",
-    "description": "Informática estadounidense reconocida por su influyente trabajo en la investigación y desarrollo de la programación orientada a objetos. Su contribución más destacada es la creación del lenguaje de programación Smalltalk, que revolucionó la forma en que se desarrollan software y sistemas informáticos. Goldberg ha sido una defensora incansable de la usabilidad y la accesibilidad en la informática, asegurando que las aplicaciones informáticas sean más amigables para los usuarios. Su trabajo ha allanado el camino para una programación más intuitiva y eficiente, y su legado perdura en la industria de la tecnología.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/adele-goldberg.jpg",
+    "id": "saruman",
+    "name": "Saruman",
+    "shortDescription": "El mago traidor",
+    "description": "Saruman el Blanco, líder de los Istari, se corrompe por el deseo de poder y se alía con Sauron en su búsqueda del Anillo Único. Una vez respetado como sabio consejero y protector de la Tierra Media, su caída en la oscuridad lo convierte en un enemigo temible. Su traición a sus compañeros magos y su papel en la guerra contra los pueblos libres lo hacen un adversario formidable. Sin embargo, su soberbia y ambición eventualmente lo conducen a su propia destrucción, demostrando que incluso los más poderosos pueden caer ante la tentación.",
+    "imageUrl": "https://example.com/saruman.jpg",
     "facts": {
-      "yearOfBirth": "1945",
-      "birthPlace": "Chicago, Estados Unidos",
-      "mainField": "Ciencias de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://pionerasinformaticas.ujaen.es/en/computer-women-pioneers/adele-goldberg-en"
+      "race": "Maia",
+      "age": 2019,
+      "height": "2.1m",
+      "yearOfBirth": 1000
     }
   },
+
   {
-    "id": "barbara-liskov",
-    "name": "Barbara Liskov",
-    "shortDescription": "Científica de la computación, pionera en programación orientada a objetos.",
-    "description": "Pionera de la informática, es conocida por su trabajo en la programación y la arquitectura de sistemas distribuidos. Fue la primera mujer en obtener un doctorado en ciencias de la computación en el Instituto de Tecnología de Stanford y desarrolló el lenguaje de programación CLU, que estableció fundamentos para la programación orientada a objetos. Liskov ha dejado una marca indeleble en la industria de la tecnología al liderar avances en sistemas de almacenamiento y seguridad informática. Su enfoque en la fiabilidad y la robustez ha influido en el diseño de sistemas críticos en todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/barbara-liskov.jpg",
+    "id": "sauron",
+    "name": "Sauron",
+    "shortDescription": "El Señor Oscuro",
+    "description": "Sauron, el principal antagonista de la trilogía, es un antiguo Maia corrompido que busca recuperar su poder forjando un nuevo Anillo Único. Conocido como el Señor Oscuro, su influencia se extiende sobre la Tierra Media, sembrando terror y destrucción dondequiera que vaya. Su deseo de dominación lo lleva a cometer atrocidades inimaginables, manipulando a aquellos que lo rodean en su búsqueda de dominación total. Su única debilidad es el mismo Anillo que desea poseer, y su obsesión lo consume hasta su eventual derrota. ",
+    "imageUrl": "https://example.com/sauron.jpg",
     "facts": {
-      "yearOfBirth": "1939",
-      "birthPlace": "Los Angeles, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
-    },
-    "extraInfo": {
-      "imageSource": "https://medium.com/a-computer-of-ones-own/barbara-liskov-inventor-of-abstract-data-types-9f8908fdcf86"
+      "race": "Maia",
+      "age": 2019,
+      "height": "3.2m",
+      "yearOfBirth": 1000
     }
   },
+  
   {
-    "id": "grace-hopper",
-    "name": "Grace Hopper",
-    "shortDescription": "Científica de la computación, creadora del primer compilador.",
-    "description": "Una de las pioneras de la informática, es famosa por su contribución al desarrollo del primer compilador y al lenguaje de programación COBOL. Además, desafió los estereotipos de género en la década de 1940 al unirse a la Marina de los Estados Unidos y convertirse en la primera programadora de la computadora Harvard Mark I. Su legado abarca la creación de conceptos cruciales como la \"depuración de software\" y su influencia en el desarrollo de la informática moderna, estableciendo estándares para la programación de alto nivel y la innovación tecnológica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/grace-hopper.jpg",
+    "id": "gollum",
+    "name": "Gollum",
+    "shortDescription": "Antiguo poseedor del Anillo Único",
+    "description": "Gollum, anteriormente conocido como Sméagol, fue corrompido por el Anillo Único y se convirtió en una criatura deforme y obsesionada con recuperar su posesión. Una vez un hobbit inocente, su lucha interna entre su antiguo yo y su alter ego, Gollum, lo consume. Su relación con el Anillo es tanto su perdición como su redención, ya que lo impulsa a traicionar a Frodo y Sam para recuperar su precioso. Sin embargo, su papel en la destrucción del Anillo finalmente le otorga la redención que tanto anhelaba, demostrando que incluso los más oscuros pueden encontrar la luz.",
+    "imageUrl": "https://example.com/gollum.jpg",
     "facts": {
-      "yearOfBirth": "1906",
-      "yearOfDeath": "1992",
-      "birthPlace": "Nueva York, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
+        "race": "Hobbit",
+        "age": 589,
+        "height": "0.8m",
+        "yearOfBirth": 2430
+      }
     },
-    "extraInfo": {
-      "imageSource": "https://photos.com/featured/grace-hopper-with-early-computer-bettmann.html"
-    }
-  },
-  {
-    "id": "margaret-hamilton",
-    "name": "Margaret Hamilton",
-    "shortDescription": "Científica de la computación, lideró desarrollo de software para Apollo 11.",
-    "description": "Destacada científica de la computación que desempeñó un papel fundamental en el programa Apollo de la NASA. Fue directora de la División de Ingeniería de Software en el Laboratorio de Instrumentación del MIT, donde desarrolló el concepto de \"ingeniería de software\". Su liderazgo en el desarrollo del software de vuelo para las misiones Apollo fue fundamental para el éxito de la llegada del hombre a la Luna. Hamilton es un ejemplo de cómo la tecnología y la ciencia pueden alcanzar logros extraordinarios cuando se combinan con un enfoque innovador y una visión audaz.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/margaret-hamilton.jpg",
-    "facts": {
-      "yearOfBirth": "1936",
-      "birthPlace": "Paoli, Indiana, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
+    
+    {
+      "id": "treebeard",
+      "name": "Treebeard",
+      "shortDescription": "El pastor de los árboles",
+      "description": "También conocido como Barbárbol, es el líder de los Ents, antiguas criaturas que protegen los bosques de la Tierra Media. Conocido por su sabiduría y su profundo amor por la naturaleza es un defensor apasionado de su hogar, decidido a protegerlo de la destrucción causada por Saruman y sus aliados. Su paciencia y su habilidad para ver el panorama completo lo convierten en un aliado valioso para la Comunidad del Anillo en su lucha contra la oscuridad. Su voz se alza como un eco de los antiguos tiempos, recordando a todos la importancia de proteger y preservar la Tierra Media.",
+      "imageUrl": "https://example.com/treebeard.jpg",
+      "facts": {
+        "race": "Ent",
+        "age": 3872,
+        "height": "4.2m",
+        "yearOfBirth": 990
+      }
     },
-    "extraInfo": {
-      "imageSource": "https://odetta.ai/blogs/margaret-hamilton-the-first-software-engineer"
-    }
-  },
-  {
-    "id": "radia-perlman",
-    "name": "Radia Perlman",
-    "shortDescription": "Ingeniera de redes, inventora del algoritmo Spanning Tree.",
-    "description": "Científica de la computación estadounidense, ha dejado una marca indeleble en el mundo de las redes informáticas y la seguridad. Conocida como \"la madre de Internet\", su invención del algoritmo Spanning Tree Protocol (STP) revolucionó la conectividad de redes y sentó las bases para la infraestructura de Internet moderna. A pesar de operar en un campo dominado por hombres, Perlman ha demostrado que las mujeres pueden liderar avances tecnológicos vitales. Su compromiso con la resiliencia de las redes y la ciberseguridad ha influido en la estabilidad y confiabilidad de la comunicación en línea.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/radia-perlman.jpg",
-    "facts": {
-      "yearOfBirth": "1951",
-      "birthPlace": "Portsmouth, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
+
+    {
+      "id": "shadowfax",
+      "name": "Shadowfax",
+      "shortDescription": "El Señor de los Caballos",
+      "description": "Shadowfax es un caballo noble y veloz, conocido como el Señor de los Caballos, leal a Gandalf y capaz de llevarlo a grandes velocidades. Criado en las praderas de Rohan, Shadowfax es más que un mero corcel; es un símbolo de libertad y poderío. Su inteligencia y su conexión con Gandalf son incomparables, y su papel en la lucha contra las fuerzas de la oscuridad es crucial. Montado por el mago en sus misiones más peligrosas, Shadowfax demuestra una valentía y un coraje dignos de elogio, inspirando a aquellos que lo rodean con su nobleza y gracia.",
+      "imageUrl": "https://example.com/shadowfax.jpg",
+      "facts": {
+        "race": "Caballo",
+        "age": 30,
+        "height": "1.7m",
+        "yearOfBirth": 1994
+      }
     },
-    "extraInfo": {
-      "imageSource": "https://hackaday.com/2018/05/29/spanning-the-tree-dr-radia-perlman-untangling-networks/"
-    }
-  },
-  {
-    "id": "shafi-goldwasser",
-    "name": "Shafi Goldwasser",
-    "shortDescription": "Científica de la computación, ganadora del Premio Turing.",
-    "description": "Es una destacada criptógrafa y científica de la computación que ha contribuido significativamente a la teoría de la computación y la seguridad de la información. Su trabajo en criptografía de probabilidad y complejidad computacional ha sentado las bases para la seguridad en línea y la privacidad de datos en un mundo cada vez más digitalizado. Goldwasser es un ejemplo de cómo la ciencia de la computación puede abordar desafíos contemporáneos y proteger la información en la era de la información.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/shafi-goldwasser.jpg",
-    "facts": {
-      "yearOfBirth": "1958",
-      "birthPlace": "Nueva York, Estados Unidos",
-      "mainField": "Ciencia de la Computación"
+
+    {
+      "id": "nazgul",
+      "name": "Nazgûl",
+      "shortDescription": "Los Nueve Espectros del Anillo",
+      "description": "Los Nazgûl, también conocidos como los Nueve Espectros del Anillo, son los antiguos reyes humanos corrompidos por los Anillos de Poder de Sauron. Ahora esclavos de la voluntad del Señor Oscuro, estos espectros aterradores son sus más temidos servidores, encargados de cazar y capturar al Portador del Anillo. Montados en sus dragones alados y envueltos en sombras, los Nazgûl son una presencia ominosa que infunde terror en el corazón de quienes los encuentran. Su única debilidad es la luz del día y el coraje de aquellos que se atreven a enfrentarlos en la batalla.",
+      "imageUrl": "https://example.com/nazgul.jpg",
+      "facts": {
+        "race": "Hombre",
+        "age": "Desconocida",
+        "height": "Variable",
+        "yearOfBirth": "Desconocido"
+      }
     },
-    "extraInfo": {
-      "imageSource": "https://www.jahresbericht2019.unibe.ch/successes_2019/einstein_lectures/index_eng.html"
-    }
-  },
-  {
-    "id": "chien-shiung-wu",
-    "name": "Chien-Shiung Wu",
-    "shortDescription": "Física experimental, contribuyó a la física nuclear.",
-    "description": "Física experimental de origen chino, desafiando los prejuicios de género y nacionalidad, realizó experimentos fundamentales en física de partículas y contribuyó significativamente a la comprensión de la desintegración beta. Su famoso experimento \"Wu\" refutó la paridad en la física de partículas, lo que cambió la forma en que los científicos comprenden las fuerzas fundamentales de la naturaleza. Wu demostró que el talento y la perseverancia pueden superar cualquier barrera, y su legado sigue siendo un faro de inspiración para científicas en todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/chien-shiung-wu.jpg",
-    "facts": {
-      "yearOfBirth": "1912",
-      "yearOfDeath": "1997",
-      "birthPlace": "Liuhe, Taicang, China",
-      "mainField": "Física"
+
+    {
+      "id": "wargs",
+      "name": "Wargs",
+      "shortDescription": "Bestias lobunas",
+      "description": "Los Wargs son criaturas lobunas inteligentes y feroces, utilizadas por los Uruk-hai y otros servidores de Sauron en la guerra contra los pueblos libres. Dotados de una astucia natural y una ferocidad implacable, los Wargs son temidos por su capacidad para acechar en las sombras y atacar con rapidez y brutalidad. Montados por jinetes orcos, estas bestias son utilizadas como instrumentos de terror y destrucción, sembrando el caos y la desolación a su paso. Su presencia en el campo de batalla es un recordatorio constante del poder oscuro que amenaza con engullir a la Tierra Media.",
+      "imageUrl": "https://example.com/wargs.jpg",
+      "facts": {
+        "race": "Criatura",
+        "age": "Desconocida",
+        "height": "Variable",
+        "yearOfBirth": "Desconocido"
+      }
     },
-    "extraInfo": {
-      "imageSource": "https://www.thoughtco.com/chien-shiung-wu-biography-3530366"
-    }
-  },
-  {
-    "id": "hedy-lamarr",
-    "name": "Hedy Lamarr",
-    "shortDescription": "Actriz e inventora, contribuyó al desarrollo de la tecnología de espectro ensanchado.",
-    "description": "Actriz austroamericana y científica, fue una mente brillante en la intersección de la tecnología y el entretenimiento. Junto con el compositor George Antheil, inventó un sistema de comunicación secreta durante la Segunda Guerra Mundial que sentó las bases para la tecnología de espectro ensanchado y la comunicación inalámbrica moderna. Lamarr demostró que las mujeres pueden destacar tanto en el cine como en la ciencia, y su legado como inventora ha sido fundamental para el desarrollo de la tecnología de comunicación inalámbrica que usamos en la actualidad.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/hedy-lamarr.jpg",
-    "facts": {
-      "yearOfBirth": "1914",
-      "yearOfDeath": "2000",
-      "birthPlace": "Viena, Austria",
-      "mainField": "Actuación, Física"
+
+    {
+      "id": "balrog",
+      "name": "Balrog",
+      "shortDescription": "El demonio de las sombras",
+      "description": "Los Balrogs son antiguos espíritus de fuego y sombra, criaturas temibles que sirven a Morgoth y que fueron despertadas por Sauron en la Tercera Edad. Conocidos por su inmensa fuerza y su habilidad para manipular el fuego, los Balrogs son enemigos mortales capaces de sembrar el caos y la destrucción dondequiera que vayan. El Balrog de Moria, enfrentado por Gandalf en una batalla legendaria, es un recordatorio del poder oscuro que yace en las profundidades de la Tierra Media, una fuerza que debe ser enfrentada con valentía y determinación.",
+      "imageUrl": "https://example.com/balrog.jpg",
+      "facts": {
+        "race": "Maia",
+        "age": "Desconocida",
+        "height": "Variable",
+        "yearOfBirth": "Desconocido"
+      }
     },
-    "extraInfo": {
-      "imageSource": "https://www.sparkfun.com/news/6147"
-    }
-  },
-  {
-    "id": "maria-goeppert-mayer",
-    "name": "Maria Goeppert Mayer",
-    "shortDescription": "Física teórica, ganadora del Premio Nobel de Física.",
-    "description": "Física teórica alemana-estadounidense, dejó una profunda huella en la física nuclear y la mecánica cuántica. Fue la segunda mujer en recibir el Premio Nobel de Física y su trabajo pionero en la estructura de capas nucleares revolucionó nuestra comprensión de los núcleos atómicos. A pesar de las barreras de género en la academia, su dedicación y talento la llevaron a contribuir significativamente a la teoría nuclear, abriendo el camino para futuras investigadoras en un campo dominado por hombres. Maria Goeppert Mayer es un ejemplo inspirador de excelencia científica y perseverancia en la búsqueda del conocimiento.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/maria-goeppert-mayer.jpg",
-    "facts": {
-      "yearOfBirth": "1906",
-      "yearOfDeath": "1972",
-      "birthPlace": "Kattowitz, Alemania",
-      "mainField": "Física"
+
+    {
+      "id": "shelob",
+      "name": "Shelob",
+      "shortDescription": "La araña gigante",
+      "description": "Shelob es una antigua araña gigante que habita en los túneles de Cirith Ungol y es temida por su veneno y su astucia. Conocida como el Terror de las Oscuridades, Shelob es una criatura solitaria y retorcida, cuya única pasión es la caza y la devoración de sus presas. Su guarida, un laberinto de túneles y telarañas, es un lugar de pesadilla que pocos se atreven a explorar. Atrapando a sus víctimas en su red mortal, Shelob se deleita en su sufrimiento antes de consumirlas, una pesadilla viviente en la sombra de la Tierra Media.",
+      "imageUrl": "https://example.com/shelob.jpg",
+      "facts": {
+        "race": "Criatura",
+        "age": "Desconocida",
+        "height": "Variable",
+        "yearOfBirth": "Desconocido"
+      }
     },
-    "extraInfo": {
-      "imageSource": "https://www.wsemexhibit.org/maria-goeppert-mayer.html"
-    }
-  },
-  {
-    "id": "lise-meitner",
-    "name": "Lise Meitner",
-    "shortDescription": "Física nuclear, contribuyó a la teoría de la fisión nuclear.",
-    "description": "Física austriaca-sueca, dejó un legado imborrable en la física nuclear y la radioquímica. A pesar de enfrentar obstáculos de género en una era dominada por hombres, colaboró con Otto Hahn en el descubrimiento de la fisión nuclear, un avance revolucionario. Aunque no compartió el Premio Nobel por este logro, su contribución fue crucial para comprender la energía nuclear y la física de partículas. Su determinación y pasión por la ciencia han inspirado a generaciones de científicas. Lise Meitner es un símbolo perdurable de la perseverancia femenina y el impacto duradero que las mujeres pueden tener en la ciencia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/lise-meitner.jpg",
-    "facts": {
-      "yearOfBirth": "1878",
-      "yearOfDeath": "1968",
-      "birthPlace": "Viena, Austria",
-      "mainField": "Física"
+
+    {
+      "id": "mouth_of_sauron",
+      "name": "Boca de Sauron",
+      "shortDescription": "El heraldo del Señor Oscuro",
+      "description": "La Boca de Sauron es el portavoz y heraldo del Señor Oscuro, que negocia con la Compañía del Anillo en la Puerta Negra antes de la Batalla de Morannon. Una figura ominosa y siniestra, la Boca de Sauron es una manifestación de la corrupción y el mal que emana de Mordor. Su presencia inspira terror y desesperación, y sus palabras están llenas de engaño y manipulación. Como representante de Sauron, su propósito es sembrar discordia y desconfianza entre los enemigos del Señor Oscuro, socavando su determinación y esperanza antes de la batalla final.",
+      "imageUrl": "https://example.com/mouth_of_sauron.jpg",
+      "facts": {
+        "race": "Hombre",
+        "age": "Desconocida",
+        "height": "Variable",
+        "yearOfBirth": "Desconocido"
+      }
     },
-    "extraInfo": {
-      "imageSource": "https://www.bing.com/images/create/lise-meitner-in-nuclear-physics-lab-in-19502c-retro/651196e6bbcb4009950e9955c2199760"
-    }
-  },
-  {
-    "id": "sau-lan-wu",
-    "name": "Sau Lan Wu",
-    "shortDescription": "Física de partículas, contribuyó a experimentos clave en física de alta energía.",
-    "description": "Física experimental sinoamericana, ha sido una fuerza motriz en la física de partículas. Destacó en experimentos en el CERN y lideró investigaciones cruciales, como el descubrimiento del quark c, que expandieron nuestro entendimiento de la estructura fundamental de la materia. Wu superó desafíos en una disciplina dominada por hombres y ha sido un faro de inspiración para científicas de todo el mundo. Sau Lan Wu es un ejemplo de excelencia científica y de cómo las mujeres pueden dejar huella en la investigación de vanguardia.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/sau-lan-wu.jpg",
-    "facts": {
-      "yearOfBirth": "1940",
-      "birthPlace": "Hong Kong, China",
-      "mainField": "Física de Partículas"
-    },
-    "extraInfo": {
-      "imageSource": "https://repository.aip.org/islandora/object/nbla%3A315195"
-    }
-  },
-  {
-    "id": "jocelyn-bell-burnell",
-    "name": "Jocelyn Bell Burnell",
-    "shortDescription": "Astrónoma y astrofísica, co-descubridora de los púlsares.",
-    "description": "Astrofísica británica, es una figura extraordinaria en la ciencia. Durante su doctorado, hizo un descubrimiento revolucionario al detectar los primeros púlsares, estrellas de neutrones altamente magnetizadas que emiten pulsos regulares de radiación. A pesar de que su asesor recibió el Premio Nobel por este descubrimiento, Bell Burnell se ha convertido en un símbolo de perseverancia y contribución de las mujeres a la astronomía. Su carrera distinguida y su activismo en favor de la diversidad de género en la ciencia han inspirado a generaciones futuras de científicas. Jocelyn Bell Burnell es un ejemplo de valentía y excelencia científica.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/jocelyn-bell-burnell.jpg",
-    "facts": {
-      "yearOfBirth": "1943",
-      "birthPlace": "Belfast, Reino Unido",
-      "mainField": "Astronomía, Astrofísica"
-    },
-    "extraInfo": {
-      "imageSource": "https://womeninscienceweadmire.icfo.eu/wiswa-2/jocelyn-bell/"
-    }
-  },
-  {
-    "id": "dorothy-crowfoot-hodgkin",
-    "name": "Dorothy Crowfoot Hodgkin",
-    "shortDescription": "Química, ganadora del Premio Nobel de Química.",
-    "description": "Química británica, es una figura icónica en la ciencia que superó las barreras de género de su época. Su trabajo revolucionario en la cristalografía de rayos X permitió determinar la estructura de importantes biomoléculas, como la penicilina, la vitamina B12 y la insulina. Fue galardonada con el Premio Nobel de Química en 1964, siendo la tercera mujer en recibir este prestigioso reconocimiento. Hodgkin no solo fue una científica excepcional, sino también una defensora de la igualdad de género en la ciencia, allanando el camino para futuras generaciones de científicas y dejando un legado duradero en la investigación y la equidad.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/dorothy-crowfoot-hodgkin.jpg",
-    "facts": {
-      "yearOfBirth": "1910",
-      "yearOfDeath": "1994",
-      "birthPlace": "El Cairo, Egipto / Shipston-on-Stour, Reino Unido",
-      "mainField": "Química"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.some.ox.ac.uk/news/jan-royall-why-we-must-champion-dorothy-hodgkin-for-the-50-note/"
-    }
-  },
-  {
-    "id": "marie-curie",
-    "name": "Marie Curie",
-    "shortDescription": "Física y química, ganadora de dos Premios Nobel.",
-    "description": "física y química de origen polaco y nacionalizada francesa, es una de las figuras más icónicas en la historia de la ciencia. Ganadora de dos premios Nobel (Física en 1903 y Química en 1911), Curie realizó investigaciones fundamentales sobre la radiactividad y el descubrimiento de los elementos radio y polonio. Su dedicación y valentía en la investigación científica, a pesar de los desafíos de la discriminación de género y los riesgos de la radiación, la convierten en un modelo a seguir para científicas de todo el mundo.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marie-curie.jpg",
-    "facts": {
-      "yearOfBirth": "1867",
-      "yearOfDeath": "1934",
-      "birthPlace": "Varsovia, Polonia",
-      "mainField": "Física y Química"
-    },
-    "extraInfo": {
-      "imageSource": "https://www.historyextra.com/period/first-world-war/life-of-the-week-marie-curie/"
-    }
-  },
-  {
-    "id": "marjory-stephenson",
-    "name": "Marjory Stephenson",
-    "shortDescription": "Microbióloga y bioquímica, investigó en enzimología.",
-    "description": "Bioquímica británica, brilló como científica en una época en la que las mujeres enfrentaban obstáculos muy significativos en la investigación científica. Su trabajo pionero en microbiología, enzimología y bioquímica contribuyó al entendimiento de procesos fundamentales en la vida. Fue una de las primeras mujeres en ser elegida miembro de la Royal Society, un reconocimiento a su destacada contribución a la ciencia. Además, fue una mentora y defensora de las mujeres en la ciencia, inspirando y allanando el camino para futuras generaciones.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/marjory-stephenson.jpg",
-    "facts": {
-      "yearOfBirth": "1885",
-      "yearOfDeath": "1948",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Química, Microbiología, Bioquímica"
-    },
-    "extraInfo": {
-      "imageSource": "https://microbiologysociety.org/grants-prizes/all-prizes-and-competitions-/prize-lectures/marjory-stephenson-prize-lecture/marjory-stephenson-a-short-history.html"
-    }
-  },
-  {
-    "id": "rosalind-franklin",
-    "name": "Rosalind Franklin",
-    "shortDescription": "Química y cristalógrafa, contribuyó a la comprensión de la estructura del ADN.",
-    "description": "Química y cristalógrafa británica, destacó en un campo dominado por hombres y su contribución a la ciencia es innegable. Sus investigaciones pioneras en la cristalografía de rayos X fueron fundamentales para revelar la estructura del ADN en forma de doble hélice, un hito crucial en la biología molecular. A pesar de que su trabajo inicial fue subestimado, su determinación y habilidad científica allanaron el camino para futuros avances en genética y biología. Franklin es un ejemplo inspirador de cómo las mujeres pueden sobresalir en la ciencia, dejando un legado duradero en la investigación y la igualdad de género.",
-    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/rosalind-franklin.jpg",
-    "facts": {
-      "yearOfBirth": "1920",
-      "yearOfDeath": "1958",
-      "birthPlace": "Londres, Reino Unido",
-      "mainField": "Química, Cristalografía"
-    },
-    "extraInfo": {
-      "imageSource": ""
-    }
-  }
+    
+      {
+        "id": "faramir",
+        "name": "Faramir",
+        "shortDescription": "Hijo de Denethor",
+        "description": "Faramir es el hijo menor de Denethor II, el Senescal de Gondor, y es conocido por su sabiduría, nobleza y valentía en la batalla. A diferencia de su hermano Boromir, Faramir demuestra compasión y comprensión, resistiendo la tentación del Anillo Único cuando lo encuentra. Como capitán de los Rangers de Ithilien, protege las fronteras de Gondor de las incursiones de los enemigos de Mordor. Su amor por su pueblo y su determinación para protegerlo lo convierten en un líder respetado y admirado, un símbolo de esperanza en tiempos de oscuridad.",
+        "imageUrl": "https://example.com/faramir.jpg",
+        "facts": {
+          "race": "Hombre",
+          "age": 37,
+          "height": "1.83m",
+          "yearOfBirth": 2983
+        }
+      },
+
+      {
+        "id": "eowyn",
+        "name": "Éowyn",
+        "shortDescription": "La dama de Rohan",
+        "description": "Éowyn es la sobrina del rey Théoden de Rohan y se disfraza de hombre para unirse a la batalla y derrotar al Rey Brujo de Angmar. Cansada de la vida confinada de las mujeres de Rohan, anhela la gloria de la batalla y la oportunidad de demostrar su valentía. Su encuentro con el Rey Brujo en la batalla de Pelennor Fields es legendario, ya que es ella quien finalmente lo derrota. Su coraje y determinación la convierten en un símbolo de la fuerza femenina y la resistencia en un mundo dominado por la guerra y la adversidad.",
+        "imageUrl": "https://example.com/eowyn.jpg",
+        "facts": {
+          "race": "Hombre",
+          "age": 25,
+          "height": "1.68m",
+          "yearOfBirth": 2995
+        }
+      },
+
+      {
+        "id": "denethor",
+        "name": "Denethor",
+        "shortDescription": "El Senescal de Gondor",
+        "description": "Denethor II es el último Senescal de Gondor antes del regreso del rey legítimo. Gobierna con mano dura y cae en la desesperación ante la guerra. Consumido por el pesar y la pérdida, su mente se oscurece y se vuelve cada vez más irracional. Aunque es un líder competente en tiempos de paz, su incapacidad para enfrentar la creciente amenaza de Mordor lo lleva a tomar decisiones desesperadas y destructivas, causando la división y el sufrimiento dentro de su propio reino. Su caída en la locura es un recordatorio sombrío del poder corruptor del miedo y la desesperación.",
+        "imageUrl": "https://example.com/denethor.jpg",
+        "facts": {
+          "race": "Hombre",
+          "age": 89,
+          "height": "1.83m",
+          "yearOfBirth": 2901
+        }
+      },
+
+      {
+        "id": "bilbo_bolson",
+        "name": "Bilbo Bolsón",
+        "shortDescription": "El antiguo portador del Anillo",
+        "description": "Bilbo Bolsón es un hobbit que encontró el Anillo Único durante su aventura con los enanos para reclamar Erebor. Aunque inicialmente lo ve como un simple tesoro, su encuentro con Gollum y la influencia del Anillo lo cambian para siempre. A medida que envejece, su conexión con el Anillo lo lleva a sentir el peso de su poder y su maldición, y eventualmente decide dejarlo a Frodo, comenzando así la misión para destruirlo. A pesar de su papel modesto en la trama principal, Bilbo es un símbolo de coraje y determinación en tiempos de gran adversidad.",
+        "imageUrl": "https://example.com/bilbo.jpg",
+        "facts": {
+          "race": "Hobbit",
+          "age": 131,
+          "height": "1.2m",
+          "yearOfBirth": 2890
+        }
+      },
+
+      {
+        "id": "elrond",
+        "name": "Elrond",
+        "shortDescription": "Señor de Rivendel",
+        "description": "Elrond Medio Elfo es el Señor de Rivendel y un sabio consejero. Ayuda a la Comunidad del Anillo en su misión para destruir el Anillo Único. Conocido por su paciencia y sabiduría, Elrond posee un profundo conocimiento de la historia y el destino de la Tierra Media. Su influencia se extiende mucho más allá de los límites de Rivendel, ya que es respetado y admirado por pueblos de todas las razas. Como guardián de uno de los Últimos Hogares Seguros, su papel en la lucha contra Sauron es fundamental para el destino de toda la Tierra Media.",
+        "imageUrl": "https://example.com/elrond.jpg",
+        "facts": {
+          "race": "Medio Elfo",
+          "age": "Desconocida",
+          "height": "Variable",
+          "yearOfBirth": "Desconocido"
+        }
+      },
+
+      {
+        "id": "galadriel",
+        "name": "Galadriel",
+        "shortDescription": "La dama de Lórien",
+        "description": "Galadriel es una poderosa elfa y la señora de Lothlórien, conocida por su sabiduría, belleza y habilidades mágicas. Aunque su papel en la trama principal puede parecer secundario, su influencia y su conexión con el destino de la Tierra Media son fundamentales. Como portadora de uno de los Tres Anillos de los Elfos, Galadriel posee un poder incomparable, pero su sabiduría y compasión son igualmente impresionantes. Su papel como guía y protectora de la Comunidad del Anillo en Lothlórien es esencial para su éxito en la misión para destruir el Anillo Único y derrotar a Sauron.",
+        "imageUrl": "https://example.com/galadriel.jpg",
+        "facts": {
+          "race": "Elfo",
+          "age": "Desconocida",
+          "height": "Variable",
+          "yearOfBirth": "Desconocido"
+        }
+      }
+
 ];
