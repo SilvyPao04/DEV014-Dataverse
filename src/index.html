@@ -1,3 +1,4 @@
+HTML:
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,14 +6,12 @@
     <title>Dataverse</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  
   <body>
     <header>
       <div class="logo">
-        <img src="https://i.pinimg.com/564x/3a/6a/0f/3a6a0fcf14258d43a845b9f5f332a5be.jpg" alt="Logo de la página">
+        <img src="data/img/logo1.jpeg" alt="Logo de la página">
     </div>
       <h1>Personajes Del Señor de los Anillos</h1>
-    
     <nav>
         <ul>
             <li><a href="#">Películas</a></li>
@@ -20,14 +19,11 @@
             <li><a href="#">Blog</a></li>
         </ul>
     </nav>
-    <button id="suscribirse">Suscribirse</button>
+    <button id="suscribirse">Suscríbete</button>
     <br>
-  
     </header>
-
     <main>
       <h2>¡Embárcate en la búsqueda del Anillo y descubre la Tierra Media!</h2>
-   
       <div class="filtros">
         <select id="filtro1">
             <option value="raza">Raza</option>
@@ -63,64 +59,33 @@
             <option value="estatura">Entre 2890 y 2999</option>
             <option value="año">Desconocido</option>
         </select>
-        <button id="limpiar">Limpiar</button>
+        <button id="limpiar">Borrar filtros</button>
     </div>
-        <ul id="root">
-            
-        </ul>
+        <ul id="root"></ul>
         <div class="texto-centrado">
           <p>¡Bienvenido a nuestro santuario virtual para los amantes de la trilogía de El Señor de los Anillos!
- 
-            Nuestra página es tu guía definitiva para explorar los personajes más icónicos de la saga, desde los valientes miembros de la Comunidad del Anillo hasta los temibles señores oscuros de Mordor. </p>
+             Nuestra página es tu guía definitiva para explorar los personajes más icónicos de la saga, desde los valientes miembros de la Comunidad del Anillo hasta los temibles señores oscuros de Mordor. </p>
       </div>
-      <ul class="tarjetas">
-        <li class="tarjeta">
-            <img src="imagen1.jpg" alt="Nombre de la imagen">
-            <div class="descripcion">
-                <h3>Nombre</h3>
-                <ul>
-                    <li>Raza: Elfo</li>
-                    <li>Edad: 135</li>
-                    <li>Estatura: 1.5</li>
-                    <li>Año de Nacimiento: 2000</li>
-                </ul>
-            </div>
-        </li>
-      </ul>
-
-    <button id="" class="boton-suscribirse">Suscribirse</button>
-
+      <div id="listaElementos"></div>
+    <button id="" class="boton-suscribirse">Mostrar más</button>
     <div class="texto-centrado">
       <p>Aprende más sobre las películas</p>
   </div>
-
-  <ul class="tarjetas">
-    <li class="tarjeta">
-        <img src="https://i.pinimg.com/564x/1f/90/fe/1f90feb940a015ecd3918df90e094b58.jpg" alt="Nombre de la imagen">
-        
-    </li>
-    
-</ul>
-
-<ul class="tarjetas">
-  <li class="tarjeta">
-      <img src="https://i.pinimg.com/564x/ea/72/0f/ea720f5c160e5286df9ee3feb749e213.jpg" alt="Nombre de la imagen">
-      
-  </li>
-  
-</ul>
-<ul class="tarjetas">
-  <li class="tarjeta">
-      <img src="https://i.pinimg.com/564x/df/1c/a6/df1ca6dddcc57ae659f9966d4d5f9fdf.jpg" alt="Nombre de la imagen">
-      
-  </li>
-  
-</ul>
+  <div class="peliculas">
+    <img src="https://i.pinimg.com/564x/1f/90/fe/1f90feb940a015ecd3918df90e094b58.jpg" alt="Nombre de la imagen">
+    <img src="https://i.pinimg.com/564x/ea/72/0f/ea720f5c160e5286df9ee3feb749e213.jpg" alt="Nombre de la imagen">
+    <img src="https://i.pinimg.com/564x/df/1c/a6/df1ca6dddcc57ae659f9966d4d5f9fdf.jpg" alt="Nombre de la imagen">
+  </div>
     </main>
-
     <footer>
-      <p>© 2024 - Todos los derechos reservados</p>
-    </footer>
+      <div class="logo-footer">
+        <img src="data/img/logo1.jpeg" alt="Logo de la página">
+      </div>
+      <p>Dirección: En algún lugar de la Tierra Media <br>
+      Contacto: 1600 - LA COMARCA <br>
+      Email: lacomarca@elseñordelosanillos.com <br>
+      © 2024 Laboratoria. All Rights Reserved - Designed by DV07
+  </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
