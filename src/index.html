@@ -1,17 +1,21 @@
-HTML:
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Dataverse</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
   </head>
+  
   <body>
-    <header>
-      <div class="logo">
-        <img src="data/img/logo1.jpeg" alt="Logo de la página">
+    
+  <header>
+    <div class="logo">
+      <img src="data/img/logo1.jpeg" alt="Logo de la página">
     </div>
-      <h1>Personajes Del Señor de los Anillos</h1>
+      
+    <h1 class="text">Personajes Del Señor de los Anillos</h1>
+    
     <nav>
         <ul>
             <li><a href="#">Películas</a></li>
@@ -19,13 +23,17 @@ HTML:
             <li><a href="#">Blog</a></li>
         </ul>
     </nav>
+
     <button id="suscribirse">Suscríbete</button>
     <br>
-    </header>
+  </header>
+
     <main>
       <h2>¡Embárcate en la búsqueda del Anillo y descubre la Tierra Media!</h2>
+   
       <div class="filtros">
-        <select id="filtro1">
+        <label for=" ">Selecciona los filtros </label>
+        <select id="filtro1" name="filtro" >
             <option value="raza">Raza</option>
             <option value="edad">Hobbit</option>
             <option value="estatura">Maia</option>
@@ -36,7 +44,7 @@ HTML:
             <option value="año">Caballo</option>
             <option value="año">Criatura</option>
         </select>
-        <select id="filtro2">
+        <select id="filtro2" name="filtro">
             <option value="raza">Edad</option>
             <option value="año">Menos de 100 años</option>
             <option value="año">Entre 100 y 999 años</option>
@@ -44,14 +52,14 @@ HTML:
             <option value="año">2000 años o más</option>
             <option value="año">Desconocido</option>
         </select>
-        <select id="filtro3">
+        <select id="filtro3" name="filtro"> 
             <option value="raza">Estatura</option>
             <option value="edad">Menos de 1.5 metros</option>
             <option value="estatura">Entre 1.5 y 1.9 metros</option>
             <option value="año">2 metros o más</option>
             <option value="año">Desconocida</option>
         </select>
-        <select id="filtro4">
+        <select id="filtro4" name="filtro">
             <option value="raza">Año de Nacimiento</option>
             <option value="edad">Antes de 1000</option>
             <option value="estatura">Entre 1000 y 1999</option>
@@ -61,31 +69,39 @@ HTML:
         </select>
         <button id="limpiar">Borrar filtros</button>
     </div>
-        <ul id="root"></ul>
+
+    <lu id="root">
+
+    </lu>
+
         <div class="texto-centrado">
           <p>¡Bienvenido a nuestro santuario virtual para los amantes de la trilogía de El Señor de los Anillos!
              Nuestra página es tu guía definitiva para explorar los personajes más icónicos de la saga, desde los valientes miembros de la Comunidad del Anillo hasta los temibles señores oscuros de Mordor. </p>
       </div>
-      <div id="listaElementos"></div>
-    <button id="" class="boton-suscribirse">Mostrar más</button>
-    <div class="texto-centrado">
+
+       <button id="" class="boton-suscribirse">Mostrar más</button>
+
+    <div class="texto-centrado-peliculas">
       <p>Aprende más sobre las películas</p>
-  </div>
-  <div class="peliculas">
-    <img src="https://i.pinimg.com/564x/1f/90/fe/1f90feb940a015ecd3918df90e094b58.jpg" alt="Nombre de la imagen">
-    <img src="https://i.pinimg.com/564x/ea/72/0f/ea720f5c160e5286df9ee3feb749e213.jpg" alt="Nombre de la imagen">
-    <img src="https://i.pinimg.com/564x/df/1c/a6/df1ca6dddcc57ae659f9966d4d5f9fdf.jpg" alt="Nombre de la imagen">
-  </div>
+    </div>
+
+    <div class="peliculas">
+      <img src="https://i.pinimg.com/564x/1f/90/fe/1f90feb940a015ecd3918df90e094b58.jpg" alt="Nombre de la imagen">
+      <img src="https://i.pinimg.com/564x/ea/72/0f/ea720f5c160e5286df9ee3feb749e213.jpg" alt="Nombre de la imagen">
+      <img src="https://i.pinimg.com/564x/df/1c/a6/df1ca6dddcc57ae659f9966d4d5f9fdf.jpg" alt="Nombre de la imagen">  
+    </div>
+  
     </main>
+
     <footer>
       <div class="logo-footer">
-        <img src="data/img/logo1.jpeg" alt="Logo de la página">
+        <img src="data/img/logo1.jpeg" alt="Logo de la página"> 
       </div>
       <p>Dirección: En algún lugar de la Tierra Media <br>
       Contacto: 1600 - LA COMARCA <br>
-      Email: lacomarca@elseñordelosanillos.com <br>
-      © 2024 Laboratoria. All Rights Reserved - Designed by DV07
-  </footer>
+      Email: lacomarca@elseñordelosanillos.com <br>   
+      © 2024 Laboratoria. All Rights Reserved - Designed by DV07</p>
+    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
