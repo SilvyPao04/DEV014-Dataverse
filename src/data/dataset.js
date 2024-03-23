@@ -336,5 +336,4 @@ export default [
           "yearOfBirth": "Desconocido"
         }
       }
-
 ];
