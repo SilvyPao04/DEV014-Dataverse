@@ -1,21 +1,30 @@
 export const renderItems = (data) => {
   
   // Crear un elemento <ul>
-  const ulElement = document.createElement('ul');
-
+  
+  const divElement = document.createElement('div');
+  
   // Recorrer la data
   data.forEach(item => {
     // Crear un elemento <li> para cada item
+    const liImg = document.createElement('img');
     const liElement = document.createElement('li');
+    const liDescription = document.createElement('li')
 
     // Asignar el contenido del item al <li>
-    liElement.textContent = "jajaja";
+    liImg.src = item.imageUrl;
+    liElement.textContent = item.name;
+    liDescription.textContent = item.shortDescription;
 
     // Agregar el <li> al <ul>
-    ulElement.appendChild(liElement);
+    divElement.appendChild(liImg);
+    divElement.appendChild(liElement);
+    divElement.appendChild(liDescription);
   });
 
   // Retornar el elemento <ul>
-  return ulElement;
+  return divElement;
 };
+
+
 

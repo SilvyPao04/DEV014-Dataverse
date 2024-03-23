@@ -104,7 +104,7 @@ export default [
     "name": "Arwen",
     "shortDescription": "La estrella vespertina",
     "description": "Arwen Undómiel, una elfa noble de la estirpe de los Noldor, es conocida por su belleza y su amor por Aragorn. Su decisión de renunciar a la inmortalidad por amor es un acto de valentía y sacrificio que la define como una de las figuras más poderosas y nobles de la Tierra Media. Aunque su papel en la trama principal puede ser secundario, su influencia y su conexión con Aragorn son fundamentales para el éxito de la Comunidad del Anillo y la restauración de la paz en la Tierra Media. ",
-    "imageUrl": "data/img/arwen.jpg",
+    "imageUrl": "data/img/arwen .jpg",
     "facts": {
       "race": "Elfo",
       "age": 2921,
@@ -216,7 +216,7 @@ export default [
       "name": "Balrog",
       "shortDescription": "El demonio de las sombras",
       "description": "Los Balrogs son antiguos espíritus de fuego y sombra, criaturas temibles que sirven a Morgoth y que fueron despertadas por Sauron en la Tercera Edad. Conocidos por su inmensa fuerza y su habilidad para manipular el fuego, los Balrogs son enemigos mortales capaces de sembrar el caos y la destrucción dondequiera que vayan. El Balrog de Moria, enfrentado por Gandalf en una batalla legendaria, es un recordatorio del poder oscuro que yace en las profundidades de la Tierra Media, una fuerza que debe ser enfrentada con valentía y determinación.",
-      "imageUrl": "data/img/balrog.jpg",
+      "imageUrl": "data/img/balrog.jpeg",
       "facts": {
         "race": "Maia",
         "age": "Desconocida",
@@ -244,7 +244,7 @@ export default [
       "name": "Boca de Sauron",
       "shortDescription": "El heraldo del Señor Oscuro",
       "description": "La Boca de Sauron es el portavoz y heraldo del Señor Oscuro, que negocia con la Compañía del Anillo en la Puerta Negra antes de la Batalla de Morannon. Una figura ominosa y siniestra, la Boca de Sauron es una manifestación de la corrupción y el mal que emana de Mordor. Su presencia inspira terror y desesperación, y sus palabras están llenas de engaño y manipulación. Como representante de Sauron, su propósito es sembrar discordia y desconfianza entre los enemigos del Señor Oscuro, socavando su determinación y esperanza antes de la batalla final.",
-      "imageUrl": "data/img/sauron.jpg",
+      "imageUrl": "data/img/boca_de_sauron_720.jpg",
       "facts": {
         "race": "Hombre",
         "age": "Desconocida",
