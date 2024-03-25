@@ -9,7 +9,7 @@ export const renderItems = (data) => {
     const liElement = document.createElement('li');
 
     // Asignar el contenido del item al <li>
-    liElement.textContent = "jajaja";
+    liElement.textContent = item.name;
 
     // Agregar el <li> al <ul>
     ulElement.appendChild(liElement);
