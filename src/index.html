@@ -17,12 +17,10 @@
     <h1>Personajes Del Señor de los Anillos</h1>
     
     <nav>
-        <ul>
-            <li><a href="#">Películas</a></li>
-            <li><a href="#">Personajes</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
-    </nav>
+      <a href="#">Películas</a>
+      <a href="#">Personajes</a>
+      <a href="#">Blog</a>
+  </nav>
 
     <button id="suscribirse">Suscríbete</button>
     <br>
@@ -32,7 +30,8 @@
       <h2>¡Embárcate en la búsqueda del Anillo y descubre la Tierra Media!</h2>
    
       <div class="filtros">
-        <select id="filtro1">
+        <label for="filtro1">Selecciona una raza</label>
+        <select id="filtro1" name="filtro1">
             <option value="raza">Raza</option>
             <option value="edad">Hobbit</option>
             <option value="estatura">Maia</option>
@@ -43,7 +42,8 @@
             <option value="año">Caballo</option>
             <option value="año">Criatura</option>
         </select>
-        <select id="filtro2">
+        <label for="filtro2">Selecciona una edad</label>
+        <select id="filtro2" name="filtro2">
             <option value="raza">Edad</option>
             <option value="año">Menos de 100 años</option>
             <option value="año">Entre 100 y 999 años</option>
@@ -51,14 +51,16 @@
             <option value="año">2000 años o más</option>
             <option value="año">Desconocido</option>
         </select>
-        <select id="filtro3">
+        <label for="filtro3">Selecciona una estatura</label>
+        <select id="filtro3" name="filtro3">
             <option value="raza">Estatura</option>
             <option value="edad">Menos de 1.5 metros</option>
             <option value="estatura">Entre 1.5 y 1.9 metros</option>
             <option value="año">2 metros o más</option>
             <option value="año">Desconocida</option>
         </select>
-        <select id="filtro4">
+        <label for="filtro4">Selecciona un año de nacimiento</label>
+        <select id="filtro4" name="filtro4">
             <option value="raza">Año de Nacimiento</option>
             <option value="edad">Antes de 1000</option>
             <option value="estatura">Entre 1000 y 1999</option>
@@ -69,7 +71,7 @@
         <button id="limpiar">Borrar filtros</button>
     </div>
 
-    <div id="container"></div>
+    <ul id="root"></ul>
 
         <div class="texto-centrado">
           <p>¡Bienvenido a nuestro santuario virtual para los amantes de la trilogía de El Señor de los Anillos!
