@@ -13,9 +13,7 @@
     <div class="logo">
       <img src="data/img/logo1.jpeg" alt="Logo de la página">
     </div>
-      
-    <h1 class="text">Personajes Del Señor de los Anillos</h1>
-    
+      <h1>Personajes Del Señor de los Anillos</h1>
     <nav>
         <ul>
             <li><a href="#">Películas</a></li>
@@ -23,17 +21,14 @@
             <li><a href="#">Blog</a></li>
         </ul>
     </nav>
-
     <button id="suscribirse">Suscríbete</button>
     <br>
   </header>
 
     <main>
       <h2>¡Embárcate en la búsqueda del Anillo y descubre la Tierra Media!</h2>
-   
       <div class="filtros">
-        <label for=" ">Selecciona los filtros </label>
-        <select id="filtro1" name="filtro" >
+        <select id="filtro1">
             <option value="raza">Raza</option>
             <option value="edad">Hobbit</option>
             <option value="estatura">Maia</option>
@@ -44,7 +39,7 @@
             <option value="año">Caballo</option>
             <option value="año">Criatura</option>
         </select>
-        <select id="filtro2" name="filtro">
+        <select id="filtro2">
             <option value="raza">Edad</option>
             <option value="año">Menos de 100 años</option>
             <option value="año">Entre 100 y 999 años</option>
@@ -52,14 +47,14 @@
             <option value="año">2000 años o más</option>
             <option value="año">Desconocido</option>
         </select>
-        <select id="filtro3" name="filtro"> 
+        <select id="filtro3">
             <option value="raza">Estatura</option>
             <option value="edad">Menos de 1.5 metros</option>
             <option value="estatura">Entre 1.5 y 1.9 metros</option>
             <option value="año">2 metros o más</option>
             <option value="año">Desconocida</option>
         </select>
-        <select id="filtro4" name="filtro">
+        <select id="filtro4">
             <option value="raza">Año de Nacimiento</option>
             <option value="edad">Antes de 1000</option>
             <option value="estatura">Entre 1000 y 1999</option>
@@ -67,21 +62,17 @@
             <option value="estatura">Entre 2890 y 2999</option>
             <option value="año">Desconocido</option>
         </select>
+
         <button id="limpiar">Borrar filtros</button>
     </div>
-
-    <lu id="root">
-
-    </lu>
-
+        <ul id="root"></ul>
         <div class="texto-centrado">
           <p>¡Bienvenido a nuestro santuario virtual para los amantes de la trilogía de El Señor de los Anillos!
              Nuestra página es tu guía definitiva para explorar los personajes más icónicos de la saga, desde los valientes miembros de la Comunidad del Anillo hasta los temibles señores oscuros de Mordor. </p>
       </div>
-
-       <button id="" class="boton-suscribirse">Mostrar más</button>
-
-    <div class="texto-centrado-peliculas">
+      <div id="listaElementos"></div>
+    <button id="" class="boton-suscribirse">Mostrar más</button>
+    <div class="texto-centrado">
       <p>Aprende más sobre las películas</p>
     </div>
 
@@ -99,9 +90,9 @@
       </div>
       <p>Dirección: En algún lugar de la Tierra Media <br>
       Contacto: 1600 - LA COMARCA <br>
-      Email: lacomarca@elseñordelosanillos.com <br>   
-      © 2024 Laboratoria. All Rights Reserved - Designed by DV07</p>
-    </footer>
+      Email: lacomarca@elseñordelosanillos.com <br>
+      © 2024 Laboratoria. All Rights Reserved - Designed by DV07
+  </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
