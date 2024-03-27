@@ -11,6 +11,7 @@ export const renderItems = (data) => {
 
     //Asignar la clase item al <li>
     liElement.classList.add("item");
+    
 
     // Asignar el contenido del item al <li>
     liImg.src = item.imageUrl;
@@ -33,3 +34,4 @@ export const renderItems = (data) => {
   // Retornar el elemento <ul>
   return ulElement;
 };
+
