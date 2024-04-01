@@ -15,8 +15,19 @@ export const filterData = (data, filterBy, value) => {
 export const filterData2 = (data, filterBy, value) => {
   let  resultadoFiltro2 = []
   resultadoFiltro2 = data.filter((element)=>{
+
+    if(value.split(' ').length === 2){
+      const edad = value.split(' ');
+      return  element.facts[filterBy] >= edad[0] && element.facts[filterBy] <= edad[1] 
+    }if(value === '100'){
+      return element.facts[filterBy] <= value 
+    }if(value === '2000'){
+      return element.facts[filterBy] >= value && element.facts[filterBy] <= 4000
+    }if(value === 'Desconocida'){
+      return element.facts[filterBy] === value 
+    }
+
     
-    return element.facts[filterBy] <= value 
   })
 
   return resultadoFiltro2

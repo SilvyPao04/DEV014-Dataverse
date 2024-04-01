@@ -16,13 +16,13 @@ const selector2 = document.getElementById("filtro2");
 selector.addEventListener("change", function() {
 // Captura el valor seleccionado
   const valorSeleccionado = selector.value;
-  const valorSeleccionado2 = selector2.value;
+ 
   
   // Filtra los datos según el valor seleccionado raza
   const datosFiltrados = filterData(data, 'race', valorSeleccionado);
   // Filtra los datos según el valor seleccionado raza
 
-  console.log( filterData2(data, 'age', valorSeleccionado2))
+  
   // Elimina los elementos anteriores del contenedor
   while (container.firstChild) {
     container.removeChild(container.firstChild);
@@ -53,8 +53,6 @@ selector2.addEventListener("change", function() {
       const itemsFiltradoedad = renderItems(datosFiltrados2);
       container.appendChild(itemsFiltradoedad);
     
-      
-      
     });
 
 

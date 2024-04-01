@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    width: 1400px; /* Ancho máximo de la página */
+    width: 1700px; /* Ancho máximo de la página */
     height: 3000px;
     margin: 0 auto;
 }
@@ -15,6 +15,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    
 }
 
 .logo img {
@@ -31,6 +36,7 @@ h1 {
 
 nav {
     display: flex;
+    
 }
 
 nav a {
@@ -102,7 +108,9 @@ img {
     width: calc(33.33% - 2rem); /* Establece el ancho de cada elemento */
     max-width: 260px;
     height: 390px;
-    box-shadow: 5px 5px 40px rgb(222, 133, 43);
+    background: #000000;
+   /* backdrop-filter:blur(20px);*/
+    box-shadow: 5px 5px 40px rgb(105, 180, 220);
     transition: .5s ease-in;
     margin-top: 25px;
     display: flex;
