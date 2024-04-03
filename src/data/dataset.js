@@ -269,7 +269,7 @@ export default [
 
       {
         "id": "eowyn",
-        "name": "Éowyn",
+        "name": "Eowyn",
         "shortDescription": "La dama de Rohan",
         "description": "Éowyn es la sobrina del rey Théoden de Rohan y se disfraza de hombre para unirse a la batalla y derrotar al Rey Brujo de Angmar. Cansada de la vida confinada de las mujeres de Rohan, anhela la gloria de la batalla y la oportunidad de demostrar su valentía. Su encuentro con el Rey Brujo en la batalla de Pelennor Fields es legendario, ya que es ella quien finalmente lo derrota. Su coraje y determinación la convierten en un símbolo de la fuerza femenina y la resistencia en un mundo dominado por la guerra y la adversidad.",
         "imageUrl": "data/img/eowyn_720.jpg",
@@ -316,7 +316,7 @@ export default [
         "description": "Elrond Medio Elfo es el Señor de Rivendel y un sabio consejero. Ayuda a la Comunidad del Anillo en su misión para destruir el Anillo Único. Conocido por su paciencia y sabiduría, Elrond posee un profundo conocimiento de la historia y el destino de la Tierra Media. Su influencia se extiende mucho más allá de los límites de Rivendel, ya que es respetado y admirado por pueblos de todas las razas. Como guardián de uno de los Últimos Hogares Seguros, su papel en la lucha contra Sauron es fundamental para el destino de toda la Tierra Media.",
         "imageUrl": "data/img/elrond_720.jpg",
         "facts": {
-          "race": "Medio Elfo",
+          "race": "Elfo",
           "age": "Desconocida",
           "height": "Variable",
           "yearOfBirth": "Desconocido"

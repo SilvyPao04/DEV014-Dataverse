@@ -4,10 +4,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    width: 1700px; /* Ancho máximo de la página */
+    width: 1440px; /* Ancho máximo de la página */
     height: 3000px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
+
 header {
     background-color: #000000;
     color: #CBB279;
@@ -18,8 +20,6 @@ header {
     position: sticky;
     top: 0px;
     z-index: 2;
-    backdrop-filter: blur(10px);
-    
 }
 
 .logo img {
@@ -36,7 +36,6 @@ h1 {
 
 nav {
     display: flex;
-    
 }
 
 nav a {
@@ -77,14 +76,13 @@ label[for="filtro1"] {
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-main {
-    padding-top: 50px;
-}
+
 .filtros {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .filtros select, .filtros button {
@@ -93,6 +91,7 @@ main {
     border-radius: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
+    flex-wrap: wrap;
 }
 
 img {
@@ -109,8 +108,8 @@ img {
     max-width: 260px;
     height: 390px;
     background: #000000;
-   /* backdrop-filter:blur(20px);*/
-    box-shadow: 5px 5px 40px rgb(105, 180, 220);
+    box-shadow: 5px 5px 25px #f6da97;
+    border-radius: 25px;
     transition: .5s ease-in;
     margin-top: 25px;
     display: flex;
@@ -122,10 +121,8 @@ img {
     font-size: 18px;
     text-align: center;
     color: #fff;
-}
-
-.item:nth-child(3n+1) {
-    margin-left: 0; /* Elimina el margen izquierdo para el primer elemento de cada fila */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
 }
 
 .item p {
@@ -138,14 +135,13 @@ img {
 .item img {
     width: 250px;
     height: 250px;
-    border-radius: 5px;
+    border-radius: 25px;
     border:5px rgba(0, 0, 0, 0.3) solid;
 }
 
 .item:hover {
     transform: scale(1.1);
 }
-
 
 button {
     background-color: #D1991A;
