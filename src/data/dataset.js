@@ -316,7 +316,7 @@ export default [
         "description": "Elrond Medio Elfo es el Señor de Rivendel y un sabio consejero. Ayuda a la Comunidad del Anillo en su misión para destruir el Anillo Único. Conocido por su paciencia y sabiduría, Elrond posee un profundo conocimiento de la historia y el destino de la Tierra Media. Su influencia se extiende mucho más allá de los límites de Rivendel, ya que es respetado y admirado por pueblos de todas las razas. Como guardián de uno de los Últimos Hogares Seguros, su papel en la lucha contra Sauron es fundamental para el destino de toda la Tierra Media.",
         "imageUrl": "data/img/elrond_720.jpg",
         "facts": {
-          "race": "Medio Elfo",
+          "race": "Elfo",
           "age": "Desconocida",
           "height": "Variable",
           "yearOfBirth": "Desconocido"

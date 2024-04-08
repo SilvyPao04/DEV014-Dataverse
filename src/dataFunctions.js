@@ -1,10 +1,10 @@
 //import dataset from "./data/dataset";
 
-export const filterData = (data, filterBy, sortBy) => {
+export const filterData = (data, filterBy, value) => {
   let  resultadoFiltro = []
   resultadoFiltro = data.filter((element)=>{
     
-    return element.facts[filterBy] === sortBy
+    return element.facts[filterBy] === value
   })
 
   return resultadoFiltro
@@ -29,28 +29,11 @@ export const filterData2 = (data, filterBy, sortBy) => {
   return resultadoFiltro2
 }
 
-//funcion para filtra de forma ASD Y DS
-export const sortData = (data, sortBy,sortOrder) => {
+// Restablecer los valores predeterminados de los selectores
+document.getElementById('limpiar').addEventListener('click', function() {
   
-  if(sortOrder === 'A - Z'){
-    return data.sort((a, b) => {
-      if (a[sortBy] < b[sortBy]) {
-        return -1;
-      }
-      if (a[sortBy] > b[sortBy]) {
-        return 1;
-      }
-      return 0;
-    })
-  }
-  return data.sort((a, b) => {
-    if (a[sortBy] < b[sortBy]) {
-      return -1;
-    }
-    if (a[sortBy] > b[sortBy]) {
-      return 1;
-    }
-    return 0;
-  }).reverse()
-}
- 
+  document.getElementById('filtro1').selectedIndex = 0;
+  document.getElementById('filtro2').selectedIndex = 0;
+  document.getElementById('filtro3').selectedIndex = 0;
+  document.getElementById('filtro4').selectedIndex = 0;
+});
