@@ -1,7 +1,3 @@
-// Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
-
-//import dataset from "./data/dataset";
-
 // Lógica para la función "Filtrar"
 export const filterData = (data, filterBy, value) => {
   let  resultadoFiltro = []
@@ -45,35 +41,36 @@ export const filterData3 = (data, filterBy, value) => {
       return parseFloat(element.facts[filterBy]) >= parseFloat(estatura[0]) && parseFloat(element.facts[filterBy]) <= parseFloat(estatura[1]);
     } else if (value === '2') {
       return parseFloat(element.facts[filterBy]) >= 2;
-    } else if (value === 'Desconocida') {
-      return element.facts[filterBy] === value;
-    }
+    } else if (value === 'Variable') {
+      return element.facts[filterBy] === 'Variable';
+    } 
   });
 
   return resultadoFiltro3;
 };
 
-
 export const filterData4 = (data, filterBy, value) => {
   let resultadoFiltro4 = [];
 
   resultadoFiltro4 = data.filter((element) => {
-    if(value.split(' ').length === 2){
+    if (value.split(' ').length === 2) {
       const año = value.split(' ');
-      return  element.facts[filterBy] >= año[0] && element.facts[filterBy] <= año[1] 
-    }if(value === '1000'){
-      return element.facts[filterBy] <= value 
-    }if(value === '1999'){
-      return element.facts[filterBy] >= value && element.facts[filterBy] <= 2000
-    }if(value === 'Desconocida'){
-      return element.facts[filterBy] === value 
+      return element.facts[filterBy] >= año[0] && element.facts[filterBy] <= año[1];
+    } else if (value === '999') {
+      return element.facts[filterBy] < 1000; // Filtra antes de 1000
+    } else if (value === '1000 1999') {
+      return element.facts[filterBy] >= 1000 && element.facts[filterBy] <= 1999; // Filtra entre 1000 y 1999
+    } else if (value === '2000 2899') {
+      return element.facts[filterBy] >= 2000 && element.facts[filterBy] <= 2899; // Filtra entre 2000 y 2899
+    } else if (value === '2900 2999') {
+      return element.facts[filterBy] >= 2900 && element.facts[filterBy] <= 2999; // Filtra entre 2900 y 2999
+    } else if (value === 'Desconocida') {
+      return element.facts[filterBy] === 'Desconocida' || element.facts[filterBy] === 'Desconocido'; // Considera ambas representaciones
     }
   });
 
   return resultadoFiltro4;
 };
-
-
 
 
 //Lógica para la función "Ordenar"
@@ -108,3 +105,4 @@ export const sortData = (data, sortBy, sortOrder) => {
     return 0; // Retorna 0 si los elementos son iguales
   }).reverse(); // Invierte el orden del arreglo resultante
 }
+

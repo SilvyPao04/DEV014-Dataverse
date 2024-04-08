@@ -1,3 +1,4 @@
+
 export const renderItems = (data) => {
   // Crear un elemento <ul>
   const ulElement = document.createElement('ul');
@@ -30,10 +31,7 @@ export const renderItems = (data) => {
     ulElement.appendChild(liElement);
   });
 
-
   // Retornar el elemento <ul>
   return ulElement;
 };
-
-
 
