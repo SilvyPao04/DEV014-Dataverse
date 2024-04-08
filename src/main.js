@@ -1,5 +1,6 @@
 import { filterData} from './dataFunctions.js';
 import { filterData2} from './dataFunctions.js';
+import { sortData} from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
@@ -11,7 +12,7 @@ container.appendChild(itemsList.cloneNode(true));
 // Selecciona el elemento <select> por su ID
 const selector = document.getElementById("filtro1");
 const selector2 = document.getElementById("filtro2");
-
+const selector5 = document.getElementById("filtro5");
 // Agrega un evento de cambio al elemento <select>
 selector.addEventListener("change", function() {
 // Captura el valor seleccionado
@@ -36,23 +37,57 @@ selector.addEventListener("change", function() {
 
 // Agrega un evento de cambio al elemento <select>
 selector2.addEventListener("change", function() {
-    // Captura el valor seleccionado
+  // Captura el valor seleccionado
    
-      const valorSeleccionado2 = selector2.value;
+  const valorSeleccionado2 = selector2.value;
 
-      // Filtra los datos según el valor seleccionado edad
-      const datosFiltrados2 = filterData2(data, 'age', valorSeleccionado2);
+  // Filtra los datos según el valor seleccionado edad
+  const datosFiltrados2 = filterData2(data, 'age', valorSeleccionado2);
     
-      console.log( filterData2(data, 'age', valorSeleccionado2))
-      // Elimina los elementos anteriores del contenedor
-      while (container.firstChild) {
-        container.removeChild(container.firstChild);
-      }
+  console.log( filterData2(data, 'age', valorSeleccionado2))
+  // Elimina los elementos anteriores del contenedor
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
     
-      // Renderiza los elementos filtrados en el contenedor
-      const itemsFiltradoedad = renderItems(datosFiltrados2);
-      container.appendChild(itemsFiltradoedad);
+  // Renderiza los elementos filtrados en el contenedor
+  const itemsFiltradoedad = renderItems(datosFiltrados2);
+  container.appendChild(itemsFiltradoedad);
     
-    });
+});
+
+// Agrega un evento de cambio al elemento <select>
+selector5.addEventListener("change", function() {
+  // Captura el valor seleccionado
+   
+  const valorSeleccionado5 = selector5.value;
+
+  // Filtra los datos según el valor seleccionado edad
+  const datosFiltrados2 = sortData(data,'name', valorSeleccionado5);
+    
+  console.log( sortData(data,'name', valorSeleccionado5))
+  // Elimina los elementos anteriores del contenedor
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+    
+  // Renderiza los elementos filtrados en el contenedor
+  const itemsFiltradoedad = renderItems(datosFiltrados2);
+  container.appendChild(itemsFiltradoedad);
+    
+});
+
+
+// Restablecer los valores predeterminados de los selectores
+document.getElementById('limpiar').addEventListener('click', function() {
+  
+  document.getElementById('filtro1').selectedIndex = 0;
+  document.getElementById('filtro2').selectedIndex = 0;
+  document.getElementById('filtro3').selectedIndex = 0;
+  document.getElementById('filtro4').selectedIndex = 0;
+  document.getElementById('filtro5').selectedIndex = 0;
+  container.innerHTML="";
+  container.appendChild(itemsList.cloneNode(true));
+});
 
 
