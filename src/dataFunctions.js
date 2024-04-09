@@ -106,3 +106,19 @@ export const sortData = (data, sortBy, sortOrder) => {
   }).reverse(); // Invierte el orden del arreglo resultante
 }
 
+
+
+
+export const computeStats = (data) => {
+  
+  const personasConEdadConocida = data.filter(persona => typeof persona.facts.age === 'number');
+
+    if (personasConEdadConocida.length === 0) return 0;
+
+    const totalEdad = personasConEdadConocida.reduce((acumulador, persona) => {
+        return acumulador + persona.facts.age;
+    }, 0);
+
+    return Math.floor(totalEdad / personasConEdadConocida.length);
+}
+

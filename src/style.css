@@ -145,6 +145,12 @@ button {
     margin: 15px;
     cursor: pointer;
     border-radius: 15px;
+
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
 }
 
 .boton-mostrar {
@@ -156,9 +162,19 @@ button {
     cursor: pointer;
     border-radius: 15px;
     display: block;
-    margin: 0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+.conten-estadisticas {
+    font-family: Arial, sans-serif; 
+    font-size: 18px; 
+    color: #ffffff; 
+    line-height: 1.5; 
+    text-align: center; 
+   
+}
+
 
 .texto-centrado {
     font-weight: normal;
