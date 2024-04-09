@@ -105,4 +105,3 @@ export const sortData = (data, sortBy, sortOrder) => {
     return 0; // Retorna 0 si los elementos son iguales
   }).reverse(); // Invierte el orden del arreglo resultante
 }
-
