@@ -1,4 +1,4 @@
-import { filterData, filterData2, filterData3, filterData4, sortData } from './dataFunctions.js';
+import { filterData, filterData2, filterData3, filterData4, sortData, computeStats } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
@@ -85,3 +85,12 @@ document.querySelector('#limpiar').addEventListener('click', function() {
 
 // Renderizamos los elementos al cargar la página
 renderFilteredItems();
+
+//Lógica para la función calcular
+document.querySelector('#mostrar').addEventListener('click', function() {
+
+  document.querySelector('.conten-estadisticas').innerHTML = 'La edad promedio es: '+ computeStats(data)+ ' años'
+
+  console.log(computeStats(data));
+
+});
