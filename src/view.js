@@ -1,37 +1,44 @@
-
 export const renderItems = (data) => {
-  // Crear un elemento <ul>
+  // Crear un elemento <ul> para contener la lista de elementos
   const ulElement = document.createElement('ul');
   
-  // Recorrer la data
+  // Recorrer el arreglo de datos
   data.forEach(item => {
-    // Crear un elemento <li> para cada item
-    const liElement = document.createElement('li');
-    const liImg = document.createElement('img');
-    const liDescription = document.createElement('p');
-
-    //Asignar la clase item al <li>
-    liElement.classList.add("item");
+    // Para cada elemento en el arreglo, creamos un elemento <li> para representarlo
+    const liElement = document.createElement('li'); // Crear un elemento <li>
+    const liImg = document.createElement('img'); // Crear un elemento <img> para la imagen
+    const liName = document.createElement('h3'); // Crear un elemento <h3> para el nombre
+    const liShortDescription = document.createElement('p'); // Crear un elemento <p> para la descripción corta
+    const liDetails = document.createElement('p'); // Crear un elemento <p> para la información detallada
     
+    // Asignar la clase "item" al <li>
+    liElement.classList.add("item");
 
-    // Asignar el contenido del item al <li>
-    liImg.src = item.imageUrl;
-    liElement.textContent = item.name;
-    liDescription.textContent = item.shortDescription;
+    // Asignar el contenido del elemento actual a los elementos creados
+    liImg.src = item.imageUrl; // Establecer la fuente de la imagen
+    liName.textContent = item.name; // Establecer el nombre del personaje
+    liShortDescription.textContent = item.shortDescription; // Establecer la descripción corta del personaje
 
-    // Asignar el atributo itemtype a los elementos <li>
+    // Crear una cadena combinada para la información detallada del personaje
+    const combinedDetails = `Raza: ${item.facts.race}<br>Edad: ${item.facts.age}<br>Estatura: ${item.facts.height}<br>Año de nacimiento: ${item.facts.yearOfBirth}`;
+    
+    // Establecer el HTML interno del elemento de detalles con la cadena combinada
+    liDetails.innerHTML = combinedDetails;
+
+    // Asignar los atributos "itemtype" e "itemscope" a los elementos <li>
     liElement.setAttribute("itemtype", "actors");
     liElement.setAttribute("itemscope","")
     
-    // Agregar la imagen y la descripción como hijos de <li>
-    liElement.appendChild(liImg);
-    liElement.appendChild(liDescription);
-
-    // Agregar el <li> al <ul>
+    // Agregar los elementos en el orden deseado al <li>
+    liElement.appendChild(liName); // Agregar el nombre
+    liElement.appendChild(liShortDescription); // Agregar la descripción corta
+    liElement.appendChild(liImg); // Agregar la imagen
+    liElement.appendChild(liDetails); // Agregar los detalles
+    
+    // Agregar el elemento <li> al elemento <ul>
     ulElement.appendChild(liElement);
   });
 
-  // Retornar el elemento <ul>
+  // Retornar el elemento <ul> completo con todos los elementos <li> generados
   return ulElement;
 };
-
