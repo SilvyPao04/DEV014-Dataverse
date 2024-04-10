@@ -47,10 +47,23 @@ function applyFilters() {
   renderFilteredItems();
 }
 
+// Función para "Empty State": para tener un mensaje que explique a la usuaria que no se encontraron resultados en su búsqueda
+function mostrarEmptyState() {
+  const mensajeError = document.createElement('p');
+  mensajeError.textContent = 'La Tierra Media aguada, ningún personaje encontrado. Inténtalo nuevamente.';
+  mensajeError.classList.add('empty-state');
+  container.appendChild(mensajeError);
+}
+
 function renderFilteredItems() {
   container.innerHTML = ''; // Limpiamos el contenedor
   const itemsList = renderItems(filteredData); // Renderizamos los elementos filtrados
-  container.appendChild(itemsList);
+
+  if (filteredData.length === 0) {
+    return mostrarEmptyState();
+  } else {
+    container.appendChild(itemsList);
+  }
 }
 
 // Eventos de cambio para los selectores
@@ -74,10 +87,3 @@ document.querySelector('#limpiar').addEventListener('click', function() {
 // Renderizamos los elementos al cargar la página
 renderFilteredItems();
 
-document.querySelector('#mostrar').addEventListener('click', function() {
-  
-  document.querySelector('.conten-estadisticas').innerHTML = 'La edad promedio es:'+ computeStats(data)
-
-   console.log(computeStats(data));
-   
-});

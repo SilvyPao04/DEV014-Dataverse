@@ -1,4 +1,3 @@
-
 export const renderItems = (data) => {
   // Crear un elemento <ul>
   const ulElement = document.createElement('ul');
@@ -8,24 +7,29 @@ export const renderItems = (data) => {
     // Crear un elemento <li> para cada item
     const liElement = document.createElement('li');
     const liImg = document.createElement('img');
-    const liDescription = document.createElement('p');
+    const liName = document.createElement('h3'); // h3 para el nombre
+    const liShortDescription = document.createElement('p'); // Para la descripción corta
+    const liDetails = document.createElement('p'); // Para la información de raza, edad, estatura, año de nacimiento.
 
-    //Asignar la clase item al <li>
+    // Asignar la clase item al <li>
     liElement.classList.add("item");
-    
 
-    // Asignar el contenido del item al <li>
+    // Asignar el contenido del item a los elementos correspondientes
     liImg.src = item.imageUrl;
-    liElement.textContent = item.name;
-    liDescription.textContent = item.shortDescription;
+    liName.textContent = item.name;
+    liShortDescription.textContent = item.shortDescription;
+    const combinedDetails = `Raza: ${item.facts.race}<br>Edad: ${item.facts.age}<br>Estatura: ${item.facts.height}<br>Año de nacimiento: ${item.facts.yearOfBirth}`;
+    liDetails.innerHTML = combinedDetails;
 
     // Asignar el atributo itemtype a los elementos <li>
     liElement.setAttribute("itemtype", "actors");
     liElement.setAttribute("itemscope","")
     
-    // Agregar la imagen y la descripción como hijos de <li>
-    liElement.appendChild(liImg);
-    liElement.appendChild(liDescription);
+    // Agregar los elementos al <li> en el orden deseado
+    liElement.appendChild(liName); // Nombre arriba
+    liElement.appendChild(liShortDescription); // Descripción corta arriba
+    liElement.appendChild(liImg); // Imagen en medio
+    liElement.appendChild(liDetails); // Información abajo
 
     // Agregar el <li> al <ul>
     ulElement.appendChild(liElement);
@@ -34,4 +38,3 @@ export const renderItems = (data) => {
   // Retornar el elemento <ul>
   return ulElement;
 };
-
