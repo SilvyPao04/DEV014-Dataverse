@@ -16,7 +16,6 @@ header {
     color: #CBB279;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0px;
@@ -33,23 +32,6 @@ h1 {
     color:  #CBB279;
     font-size: 20px;
     margin: 5px;
-}
-
-nav a {
-    display: inline-block;
-    color:  #CBB279;
-    font-size: 18px;
-    margin-right: 10px;
-    padding: 0 10px;
-}
-
-#suscribirse {
-    background-color: #D1991A;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 15px;
 }
 
 h2 {
@@ -99,6 +81,13 @@ h3 {
     padding: 24px;
     margin-left: 112px;
     margin-right: 112px;
+}
+
+.conten-estadisticas {
+    font-size: 28px; 
+    color: #ffffff; 
+    line-height: 1.5; 
+    text-align: center; 
 }
 
 #root {
@@ -167,13 +156,6 @@ button {
 .contenedor-botones {
     display: flex;
     justify-content: center;
-}
-
-.conten-estadisticas {
-    font-size: 18px; 
-    color: #ffffff; 
-    line-height: 1.5; 
-    text-align: center; 
 }
 
 .texto-centrado {

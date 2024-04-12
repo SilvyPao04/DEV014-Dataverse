@@ -95,15 +95,17 @@ export const sortData = (data, sortBy, sortOrder) => {
   // Si es orden descendente (Z - A)
   
   // Ordenar los datos de acuerdo a la propiedad especificada y luego revertir el orden
-  return data.sort((a, b) => {
-    if (a[sortBy] < b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
-      return -1; // Retorna -1 si 'a' debe estar antes que 'b'
-    }
-    if (a[sortBy] > b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
-      return 1; // Retorna 1 si 'a' debe estar después que 'b'
-    }
-    return 0; // Retorna 0 si los elementos son iguales
-  }).reverse(); // Invierte el orden del arreglo resultante
+  if (sortOrder === 'desc') {
+    return data.sort((a, b) => {
+      if (a[sortBy] < b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
+        return 1; // Retorna 1 si 'a' debe estar antes que 'b' (inverso para orden descendente)
+      }
+      if (a[sortBy] > b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
+        return -1; // Retorna -1 si 'a' debe estar después que 'b' (inverso para orden descendente)
+      }
+      return 0; // Retorna 0 si los elementos son iguales
+    });
+  }
 }
 
 //Lógica para la función calcular
