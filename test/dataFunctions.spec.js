@@ -1,8 +1,5 @@
-import { filterData, filterData2, sortData, computeStats} from '../src/dataFunctions.js';
+import { filterData, filterData2, filterData3, filterData4, sortData, computeStats} from '../src/dataFunctions.js';
 import { data as fakeData } from './data.js';
-
-
-console.log(fakeData);
 
 describe ('Filtrar la data por Raza',()=>{
   it("La aplicación debe filtrar la data por Raza", () =>{
@@ -59,6 +56,81 @@ describe ('Filtrar la data por Edad',()=>{
   });
 });
 
+describe ('Filtrar la data por Estatura',()=>{
+  it("La aplicación debe filtrar la data por Estatura", () =>{
+    const resultadoEstatura = [
+      {
+        "id": "gandalf",
+        "name": "Gandalf",
+        "shortDescription": "El mago gris",
+        "description": "Gandalf, conocido como el Mago Gris, es una figura venerada y poderosa en la Tierra Media. Su sabiduría y habilidades mágicas lo convierten en un guía esencial para la Comunidad del Anillo en su lucha contra las fuerzas oscuras de Sauron. Aunque puede parecer distante y enigmático, Gandalf tiene un profundo amor por los pueblos libres y está dispuesto a arriesgar todo por su protección. Su papel como mentor y estratega es crucial en la guerra contra la oscuridad, y su sacrificio final en la batalla contra el Balrog es un acto de pura valentía y devoción.",
+        "imageUrl": "data/img/gandalf.jpg",
+        "facts": {
+          "race": "Maia",
+          "age": 2019,
+          "height": "2.1m",
+          "yearOfBirth": 1000
+        }
+      },
+    ];
+    expect(filterData3(fakeData, "height", "2")).toEqual(resultadoEstatura);
+  });
+});
+
+describe('Filtrar la data por Año de Nacimiento', () => {
+  it("La aplicación debe filtrar la data por Año de nacimiento", () => {
+    const fakeData = [
+      {
+        "id": "frodo_bolson",
+        "name": "Frodo Bolsón",
+        "shortDescription": "Portador del Anillo Único",
+        "description": "Frodo Bolsón, un hobbit de la Comarca, es elegido para llevar el Anillo Único a Mordor y destruirlo en el Monte del Destino. A pesar de su modesta estatura, muestra una valentía extraordinaria y una determinación inquebrantable en su peligroso viaje. Su carga lo lleva al borde de la desesperación, pero su amistad con Sam y el apoyo de sus compañeros lo guían en su difícil tarea, enfrentando peligros inimaginables para salvar a la Tierra Media de la oscuridad que amenaza con consumirla.",
+        "imageUrl": "data/img/Frodo.jpg",
+        "facts": {
+          "race": "Hobbit",
+          "age": 33,
+          "height": "1.5m",
+          "yearOfBirth": 2968
+        }
+      },
+      {
+        "id": "gandalf",
+        "name": "Gandalf",
+        "shortDescription": "El mago gris",
+        "description": "Gandalf, conocido como el Mago Gris, es una figura venerada y poderosa en la Tierra Media. Su sabiduría y habilidades mágicas lo convierten en un guía esencial para la Comunidad del Anillo en su lucha contra las fuerzas oscuras de Sauron. Aunque puede parecer distante y enigmático, Gandalf tiene un profundo amor por los pueblos libres y está dispuesto a arriesgar todo por su protección. Su papel como mentor y estratega es crucial en la guerra contra la oscuridad, y su sacrificio final en la batalla contra el Balrog es un acto de pura valentía y devoción.",
+        "imageUrl": "data/img/gandalf.jpg",
+        "facts": {
+          "race": "Maia",
+          "age": 2019,
+          "height": "2.1m",
+          "yearOfBirth": 1000
+        }
+      },
+    ];
+
+    // Cambio en los resultados esperados para que coincidan con la lógica de filtrado
+    const resultadoNacimiento = [
+      {
+        "id": "gandalf",
+        "name": "Gandalf",
+        "shortDescription": "El mago gris",
+        "description": "Gandalf, conocido como el Mago Gris, es una figura venerada y poderosa en la Tierra Media. Su sabiduría y habilidades mágicas lo convierten en un guía esencial para la Comunidad del Anillo en su lucha contra las fuerzas oscuras de Sauron. Aunque puede parecer distante y enigmático, Gandalf tiene un profundo amor por los pueblos libres y está dispuesto a arriesgar todo por su protección. Su papel como mentor y estratega es crucial en la guerra contra la oscuridad, y su sacrificio final en la batalla contra el Balrog es un acto de pura valentía y devoción.",
+        "imageUrl": "data/img/gandalf.jpg",
+        "facts": {
+          "race": "Maia",
+          "age": 2019,
+          "height": "2.1m",
+          "yearOfBirth": 1000
+        }
+      },
+    ];
+
+    const resultadoFiltradoAño = filterData4(fakeData, "yearOfBirth", "1000 1999");
+
+    expect(resultadoFiltradoAño).toEqual(resultadoNacimiento);
+  });
+});
+
 describe ('Filtrar la data por Orden',()=>{
   it("La aplicación debe filtrar la data por Orden Ascendente", () =>{
     const resultadoOrden = [
@@ -107,6 +179,7 @@ describe ('Filtrar la data por Orden',()=>{
     expect(sortData(fakeData, "orden", "asc")).toEqual(resultadoOrden);
   });
 });
+
 
 describe ('Filtrar la data por Orden',()=>{
   it("La aplicación debe filtrar la data por Orden Descendente", () =>{

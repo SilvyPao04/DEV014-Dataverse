@@ -53,9 +53,9 @@ export const filterData4 = (data, filterBy, value) => {
   let resultadoFiltro4 = [];
 
   resultadoFiltro4 = data.filter((element) => {
-    if (value.split(' ').length === 2) {
-      const año = value.split(' ');
-      return element.facts[filterBy] >= año[0] && element.facts[filterBy] <= año[1];
+    if (typeof value === 'string' && value.split(' ').length === 2) {
+      const años = value.split(' ');
+      return element.facts[filterBy] >= años[0] && element.facts[filterBy] <= años[1];
     } else if (value === '999') {
       return element.facts[filterBy] < 1000; // Filtra antes de 1000
     } else if (value === '1000 1999') {
