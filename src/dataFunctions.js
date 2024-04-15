@@ -115,8 +115,10 @@ export const computeStats = (data) => {
 
   if (personasConEdadConocida.length === 0) return 0;
 
-  const totalEdad = personasConEdadConocida.reduce((acumulador, persona) => {
-    return acumulador + persona.facts.age;
+  const edades = personasConEdadConocida.map(persona => persona.facts.age);
+
+  const totalEdad = edades.reduce((acumulador, edad) => {
+    return acumulador + edad;
   }, 0);
 
   return Math.floor(totalEdad / personasConEdadConocida.length);

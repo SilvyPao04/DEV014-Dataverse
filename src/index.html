@@ -26,7 +26,7 @@
       <div class="filtros">
 
         <label for="filtro1">Filtra tu búsqueda</label>
-        <select id="filtro1" name="filtro1">
+        <select id="filtro1" name="filtro1" data-testid="select-filter">
             <option value="raza">Raza</option>
             <option value="Hobbit">Hobbit</option>
             <option value="Maia">Maia</option>
@@ -39,7 +39,7 @@
         </select>
 
        <label for="filtro2"></label>
-        <select id="filtro2" name="filtro2">
+        <select id="filtro2" name="filtro2" data-testid="select-filter">
             <option value="Edad">Edad</option>
             <option value="100">Menos de 100 años</option>
             <option value="100 999">Entre 100 y 999 años</option>
@@ -48,7 +48,7 @@
         </select>
 
         <label for="filtro3"></label>
-        <select id="filtro3" name="filtro3">
+        <select id="filtro3" name="filtro3" data-testid="select-filter">
             <option value="Estatura">Estatura</option>
             <option value="1.5">Menos de 1.5 metros</option>
             <option value="1.5 1.9">Entre 1.5 y 1.9 metros</option>
@@ -57,7 +57,7 @@
         </select>
 
         <label for="filtro4"></label>
-        <select id="filtro4" name="filtro4">
+        <select id="filtro4" name="filtro4" data-testid="select-filter">
             <option value="año">Año de Nacimiento</option>
             <option value="999">Antes de 1000</option>
             <option value="1000 1999">Entre 1000 y 1999</option>
@@ -67,13 +67,13 @@
         </select>
 
         <label for="filtro5"></label>
-        <select id="filtro5" name="filtro5">
+        <select id="filtro5" name="filtro5" data-testid="select-sort">
           <option value="orden">Orden</option>
           <option value="asc">Ascendente</option>
           <option value="desc">Descendente</option>
         </select>
 
-        <button id="limpiar">Borrar filtros</button>
+        <button id="limpiar" data-testid="button-clear">Borrar filtros</button>
         
     </div>
 
@@ -115,7 +115,6 @@
       © 2024 Laboratoria. All Rights Reserved - Designed by DV07: Malú - Silvia </p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="main.js" type="module"></script>
   </body>
 </html>
