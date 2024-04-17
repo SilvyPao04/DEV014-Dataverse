@@ -53,9 +53,9 @@ export const filterData4 = (data, filterBy, value) => {
   let resultadoFiltro4 = [];
 
   resultadoFiltro4 = data.filter((element) => {
-    if (value.split(' ').length === 2) {
-      const año = value.split(' ');
-      return element.facts[filterBy] >= año[0] && element.facts[filterBy] <= año[1];
+    if (typeof value === 'string' && value.split(' ').length === 2) {
+      const años = value.split(' ');
+      return element.facts[filterBy] >= años[0] && element.facts[filterBy] <= años[1];
     } else if (value === '999') {
       return element.facts[filterBy] < 1000; // Filtra antes de 1000
     } else if (value === '1000 1999') {
@@ -95,35 +95,19 @@ export const sortData = (data, sortBy, sortOrder) => {
   // Si es orden descendente (Z - A)
   
   // Ordenar los datos de acuerdo a la propiedad especificada y luego revertir el orden
-  return data.sort((a, b) => {
-    if (a[sortBy] < b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
-      return -1; // Retorna -1 si 'a' debe estar antes que 'b'
-    }
-    if (a[sortBy] > b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
-      return 1; // Retorna 1 si 'a' debe estar después que 'b'
-    }
-    return 0; // Retorna 0 si los elementos son iguales
-  }).reverse(); // Invierte el orden del arreglo resultante
+  if (sortOrder === 'desc') {
+    return data.sort((a, b) => {
+      if (a[sortBy] < b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
+        return 1; // Retorna 1 si 'a' debe estar antes que 'b' (inverso para orden descendente)
+      }
+      if (a[sortBy] > b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
+        return -1; // Retorna -1 si 'a' debe estar después que 'b' (inverso para orden descendente)
+      }
+      return 0; // Retorna 0 si los elementos son iguales
+    });
+  }
 }
 
-<<<<<<<<< Temporary merge branch 1
-
-
-
-export const computeStats = (data) => {
-  
-  const personasConEdadConocida = data.filter(persona => typeof persona.facts.age === 'number');
-
-    if (personasConEdadConocida.length === 0) return 0;
-
-    const totalEdad = personasConEdadConocida.reduce((acumulador, persona) => {
-        return acumulador + persona.facts.age;
-    }, 0);
-
-    return Math.floor(totalEdad / personasConEdadConocida.length);
-}
-
-=========
 //Lógica para la función calcular
 export const computeStats = (data) => {
 

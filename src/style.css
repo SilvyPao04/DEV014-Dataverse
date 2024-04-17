@@ -16,7 +16,6 @@ header {
     color: #CBB279;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0px;
@@ -33,23 +32,6 @@ h1 {
     color:  #CBB279;
     font-size: 20px;
     margin: 5px;
-}
-
-nav a {
-    display: inline-block;
-    color:  #CBB279;
-    font-size: 18px;
-    margin-right: 10px;
-    padding: 0 10px;
-}
-
-#suscribirse {
-    background-color: #D1991A;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 15px;
 }
 
 h2 {
@@ -99,6 +81,13 @@ h3 {
     padding: 24px;
     margin-left: 112px;
     margin-right: 112px;
+}
+
+.conten-estadisticas {
+    font-size: 28px; 
+    color: #ffffff; 
+    line-height: 1.5; 
+    text-align: center; 
 }
 
 #root {
@@ -162,37 +151,12 @@ button {
     margin: 15px;
     cursor: pointer;
     border-radius: 15px;
-
 }
 
 .contenedor-botones {
     display: flex;
     justify-content: center;
 }
-
-.boton-mostrar {
-    background-color: #D1991A;
-    color: white;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    border-radius: 15px;
-    display: block;
-    margin: 0 auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.conten-estadisticas {
-    font-family: Arial, sans-serif; 
-    font-size: 18px; 
-    color: #ffffff; 
-    line-height: 1.5; 
-    text-align: center; 
-   
-}
-
 
 .texto-centrado {
     font-weight: normal;
@@ -304,37 +268,9 @@ footer {
     }
 
     .boton-mostrar{
-        font-size: 5px;
-    }
-    
-    .contenedor-botones {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .boton-mostrar {
-        background-color: #D1991A;
-        color: white;
-        padding: 10px 20px;
-        font-size: 18px;
-        border: none;
-        cursor: pointer;
-        border-radius: 15px;
-        display: block;
-        margin: 15px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
     }
 
-   
-    .conten-estadisticas {
-        font-family: Arial, sans-serif; 
-        font-size: 18px; 
-        color: #ffffff; 
-        line-height: 1.5; 
-        text-align: center;  
-    }
-
-    
     .texto-centrado{
         font-size: 20px;
     }

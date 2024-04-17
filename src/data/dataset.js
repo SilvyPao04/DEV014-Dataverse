@@ -269,7 +269,7 @@ export default [
 
       {
         "id": "eowyn",
-        "name": "Éowyn",
+        "name": "Eowyn",
         "shortDescription": "La dama de Rohan",
         "description": "Éowyn es la sobrina del rey Théoden de Rohan y se disfraza de hombre para unirse a la batalla y derrotar al Rey Brujo de Angmar. Cansada de la vida confinada de las mujeres de Rohan, anhela la gloria de la batalla y la oportunidad de demostrar su valentía. Su encuentro con el Rey Brujo en la batalla de Pelennor Fields es legendario, ya que es ella quien finalmente lo derrota. Su coraje y determinación la convierten en un símbolo de la fuerza femenina y la resistencia en un mundo dominado por la guerra y la adversidad.",
         "imageUrl": "data/img/eowyn_720.jpg",
