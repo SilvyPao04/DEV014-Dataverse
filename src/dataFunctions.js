@@ -52,61 +52,42 @@ export const filterData3 = (data, filterBy, value) => {
 export const filterData4 = (data, filterBy, value) => {
   let resultadoFiltro4 = [];
 
-  resultadoFiltro4 = data.filter((element) => {
-    if (typeof value === 'string' && value.split(' ').length === 2) {
-      const años = value.split(' ');
-      return element.facts[filterBy] >= años[0] && element.facts[filterBy] <= años[1];
-    } else if (value === '999') {
-      return element.facts[filterBy] < 1000; // Filtra antes de 1000
-    } else if (value === '1000 1999') {
-      return element.facts[filterBy] >= 1000 && element.facts[filterBy] <= 1999; // Filtra entre 1000 y 1999
-    } else if (value === '2000 2899') {
-      return element.facts[filterBy] >= 2000 && element.facts[filterBy] <= 2899; // Filtra entre 2000 y 2899
-    } else if (value === '2900 2999') {
-      return element.facts[filterBy] >= 2900 && element.facts[filterBy] <= 2999; // Filtra entre 2900 y 2999
-    } else if (value === 'Desconocida') {
-      return element.facts[filterBy] === 'Desconocida' || element.facts[filterBy] === 'Desconocido'; // Considera ambas representaciones
-    }
-  });
+  if (typeof value === 'string' && value.split(' ').length === 2) {
+    const años = value.split(' ');
+    resultadoFiltro4 = data.filter(element =>
+      element.facts[filterBy] >= parseInt(años[0], 10) && element.facts[filterBy] <= parseInt(años[1], 10)
+    );
+  } else if (value === '999') {
+    resultadoFiltro4 = data.filter(element => element.facts[filterBy] < 1000);
+  } else if (value === '1000 1999') {
+    resultadoFiltro4 = data.filter(element => element.facts[filterBy] >= 1000 && element.facts[filterBy] <= 1999);
+  } else if (value === '2000 2899') {
+    resultadoFiltro4 = data.filter(element => element.facts[filterBy] >= 2000 && element.facts[filterBy] <= 2899);
+  } else if (value === '2900 2999') {
+    resultadoFiltro4 = data.filter(element => element.facts[filterBy] >= 2900 && element.facts[filterBy] <= 2999);
+  } else if (value === 'Desconocida') {
+    resultadoFiltro4 = data.filter(element => element.facts[filterBy] === 'Desconocida' || element.facts[filterBy] === 'Desconocido');
+  }
 
   return resultadoFiltro4;
 };
 
 
+
+
 //Lógica para la función "Ordenar"
 // Función para filtrar y ordenar datos de acuerdo al criterio especificado.
 export const sortData = (data, sortBy, sortOrder) => {
-  
-  // Verificar el tipo de orden especificado
-  if (sortOrder === 'asc') {
-    
-    // Ordenar los datos de acuerdo a la propiedad especificada
-    return data.sort((a, b) => {
-      if (a[sortBy] < b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
-        return -1; // Retorna -1 si 'a' debe estar antes que 'b'
-      }
-      if (a[sortBy] > b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
-        return 1; // Retorna 1 si 'a' debe estar después que 'b'
-      }
-      return 0; // Retorna 0 si los elementos son iguales
-    });
-  }
-  
-  // Si es orden descendente (Z - A)
-  
-  // Ordenar los datos de acuerdo a la propiedad especificada y luego revertir el orden
-  if (sortOrder === 'desc') {
-    return data.sort((a, b) => {
-      if (a[sortBy] < b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
-        return 1; // Retorna 1 si 'a' debe estar antes que 'b' (inverso para orden descendente)
-      }
-      if (a[sortBy] > b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
-        return -1; // Retorna -1 si 'a' debe estar después que 'b' (inverso para orden descendente)
-      }
-      return 0; // Retorna 0 si los elementos son iguales
-    });
-  }
-}
+  return data.sort((a, b) => {
+    if (sortOrder === 'asc') {
+      return a[sortBy] > b[sortBy] ? 1 : -1;
+    } else if (sortOrder === 'desc') {
+      return a[sortBy] < b[sortBy] ? 1 : -1;
+    } else {
+      return 0;
+    }
+  });
+};
 
 //Lógica para la función calcular
 export const computeStats = (data) => {
@@ -115,8 +96,10 @@ export const computeStats = (data) => {
 
   if (personasConEdadConocida.length === 0) return 0;
 
-  const totalEdad = personasConEdadConocida.reduce((acumulador, persona) => {
-    return acumulador + persona.facts.age;
+  const edades = personasConEdadConocida.map(persona => persona.facts.age);
+
+  const totalEdad = edades.reduce((acumulador, edad) => {
+    return acumulador + edad;
   }, 0);
 
   return Math.floor(totalEdad / personasConEdadConocida.length);

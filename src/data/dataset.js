@@ -1,5 +1,4 @@
-export default [
-  
+export default [ 
         
   {
     "id": "frodo_bolson",

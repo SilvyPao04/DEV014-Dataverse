@@ -7,90 +7,97 @@ const selector = document.querySelector("#filtro1");
 const selector2 = document.querySelector("#filtro2");
 const selector3 = document.querySelector("#filtro3");
 const selector4 = document.querySelector("#filtro4");
-const selector5 = document.querySelector("#filtro5");
-
+const selectSort = document.querySelector('[data-testid="select-sort"]');
 const container = document.querySelector('#root');
+
 let filteredData = [...data]; // Creamos una copia de los datos originales
 
 function applyFilters() {
-  let currentData = [...data]; // Copia de los datos originales
-
-  // Aplicamos los filtros secuenciales
-  const valorSeleccionado = selector.value;
-  if (valorSeleccionado !== 'raza') {
-    currentData = filterData(currentData, 'race', valorSeleccionado);
-  }
-
+  // Obtenemos el valor seleccionado de cada selector
+  const valorSeleccionado1 = selector.value;
   const valorSeleccionado2 = selector2.value;
+  const valorSeleccionado3 = selector3.value;
+  const valorSeleccionado4 = selector4.value;
+  const valorSeleccionado5 = selectSort.value;
+
+  // Aplicamos los filtros en el orden deseado y actualizamos los datos filtrados
+  let currentData = [...data]; // Copia de los datos originales
+  if (valorSeleccionado1 !== 'raza') {
+    currentData = filterData(currentData, 'race', valorSeleccionado1);
+  }
   if (valorSeleccionado2 !== 'Edad') {
     currentData = filterData2(currentData, 'age', valorSeleccionado2);
   }
-
-  const valorSeleccionado3 = selector3.value;
   if (valorSeleccionado3 !== 'Estatura') {
     currentData = filterData3(currentData, 'height', valorSeleccionado3);
   }
-
-  const valorSeleccionado4 = selector4.value;
   if (valorSeleccionado4 !== 'año') {
     currentData = filterData4(currentData, 'yearOfBirth', valorSeleccionado4);
   }
-
-  const valorSeleccionado5 = selector5.value;
   if (valorSeleccionado5 !== 'orden') {
     currentData = sortData(currentData, 'name', valorSeleccionado5);
   }
 
-  // Actualizamos los datos filtrados
   filteredData = currentData;
   renderFilteredItems();
 }
 
-// Función para "Empty State": para tener un mensaje que explique a la usuaria que no se encontraron resultados en su búsqueda
+// Eventos de cambio para los selectores
+selector.addEventListener("change", (e)=>{
+  applyFilters(e)
+});
+selector2.addEventListener("change", (e)=>{
+  applyFilters(e)
+});
+selector3.addEventListener("change", (e)=>{
+  applyFilters(e)
+});
+selector4.addEventListener("change", (e)=>{
+  applyFilters(e)
+});
+selectSort.addEventListener("change", (e)=>{
+  applyFilters(e)
+});
+
+// Función para mostrar un mensaje cuando no hay resultados
 function mostrarEmptyState() {
+  container.innerHTML = ''; // Limpiamos el contenedor
   const mensajeError = document.createElement('p');
-  mensajeError.textContent = 'La Tierra Media aguada, ningún personaje encontrado. Inténtalo nuevamente.';
+  mensajeError.textContent = 'La Tierra Media aguarda, ningún personaje encontrado. Inténtalo nuevamente.';
   mensajeError.classList.add('empty-state');
   container.appendChild(mensajeError);
 }
 
 function renderFilteredItems() {
   container.innerHTML = ''; // Limpiamos el contenedor
-  const itemsList = renderItems(filteredData); // Renderizamos los elementos filtrados
-
   if (filteredData.length === 0) {
     return mostrarEmptyState();
-  } else {
-    container.appendChild(itemsList);
   }
+  const itemsList = renderItems(filteredData);
+  container.appendChild(itemsList);
 }
 
-// Eventos de cambio para los selectores
-selector.addEventListener("change", applyFilters);
-selector2.addEventListener("change", applyFilters);
-selector3.addEventListener("change", applyFilters);
-selector4.addEventListener("change", applyFilters);
-selector5.addEventListener("change", applyFilters);
-
 // Lógica para borrar filtros
-document.querySelector('#limpiar').addEventListener('click', function() {
-  selector.selectedIndex = 0;
-  selector2.selectedIndex = 0;
-  selector3.selectedIndex = 0;
-  selector4.selectedIndex = 0;
-  selector5.selectedIndex = 0;
+document.querySelector('[data-testid="button-clear"]').addEventListener('click', function() {
+  selector.value = 'raza';
+  selector2.value = 'Edad';
+  selector3.value = 'Estatura';
+  selector4.value = 'año';
+  selectSort.value = 'orden';
   filteredData = [...data]; // Restauramos los datos originales
   renderFilteredItems();
+  
+  // Limpiamos la información de mostrar promedio de edades
+  document.querySelector('.conten-estadisticas').innerHTML = '';
+
 });
 
 // Renderizamos los elementos al cargar la página
 renderFilteredItems();
 
-//Lógica para la función calcular
+// Lógica para la función calcular
 document.querySelector('#mostrar').addEventListener('click', function() {
-
-  document.querySelector('.conten-estadisticas').innerHTML = 'La edad promedio es: '+ computeStats(data)+ ' años'
-
-  console.log(computeStats(data));
-
+  document.querySelector('.conten-estadisticas').innerHTML = 'La edad promedio es: ' + computeStats(filteredData) + ' años';
+  console.log(computeStats(filteredData));
 });
+
