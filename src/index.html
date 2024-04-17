@@ -10,11 +10,8 @@
   <body>
 
   <header>
-    <div class="logo">
-      <img src="data/img/logo1.jpeg" alt="Logo de la página">
-    </div>
-
-    <h1>Personajes Del Señor de los Anillos</h1>
+    <h1> <img class="logo" src="data/img/logo1.jpeg" alt="Logo de la página">
+      Personajes Del Señor de los Anillos</h1>
   </header>
 
     <main>
@@ -23,10 +20,10 @@
 
       <h3>Explora el universo épico de <strong>El Señor de los Anillos</strong></h3>
 
-      <div class="filtros">
+      <nav class="filtros">
 
         <label for="filtro1">Filtra tu búsqueda</label>
-        <select id="filtro1" name="filtro1" data-testid="select-filter">
+        <select id="filtro1" name="filtro1" data-testid="select-filter1">
             <option value="raza">Raza</option>
             <option value="Hobbit">Hobbit</option>
             <option value="Maia">Maia</option>
@@ -39,7 +36,7 @@
         </select>
 
        <label for="filtro2"></label>
-        <select id="filtro2" name="filtro2" data-testid="select-filter">
+        <select id="filtro2" name="filtro2" data-testid="select-filter2">
             <option value="Edad">Edad</option>
             <option value="100">Menos de 100 años</option>
             <option value="100 999">Entre 100 y 999 años</option>
@@ -48,7 +45,7 @@
         </select>
 
         <label for="filtro3"></label>
-        <select id="filtro3" name="filtro3" data-testid="select-filter">
+        <select id="filtro3" name="filtro3" data-testid="select-filter3">
             <option value="Estatura">Estatura</option>
             <option value="1.5">Menos de 1.5 metros</option>
             <option value="1.5 1.9">Entre 1.5 y 1.9 metros</option>
@@ -57,7 +54,7 @@
         </select>
 
         <label for="filtro4"></label>
-        <select id="filtro4" name="filtro4" data-testid="select-filter">
+        <select id="filtro4" name="filtro4" data-testid="select-filter4">
             <option value="año">Año de Nacimiento</option>
             <option value="999">Antes de 1000</option>
             <option value="1000 1999">Entre 1000 y 1999</option>
@@ -66,41 +63,35 @@
             <option value="Desconocida">Desconocido</option>
         </select>
 
-        <label for="filtro5"></label>
-        <select id="filtro5" name="filtro5" data-testid="select-sort">
+        <label for="select-sort"></label>
+        <select id="select-sort" name="name" itemprop="name" data-testid="select-sort">
           <option value="orden">Orden</option>
-          <option value="asc">Ascendente</option>
-          <option value="desc">Descendente</option>
+          <option value="asc" name="asc">Ascendente</option>
+          <option value="desc" name="desc">Descendente</option>
         </select>
 
         <button id="limpiar" data-testid="button-clear">Borrar filtros</button>
         
-    </div>
+      </nav>
 
-    <div class="contenedor-botones">
+    <nav class="contenedor-botones">
       <button id="mostrar" class="mostrar">Mostrar Promedio de las Edades</button>
-    </div>
-    <div class="conten-estadisticas">
+    </nav>
 
-    </div>
+    <nav class="conten-estadisticas"></nav>
 
     <ul id="root"></ul>
 
-    <div class="texto-centrado">
-        <p>¡Bienvenido a nuestro santuario virtual para los amantes de la trilogía de El Señor de los Anillos!
+    <p class="texto-centrado">¡Bienvenido a nuestro santuario virtual para los amantes de la trilogía de El Señor de los Anillos!
            Nuestra página es tu guía definitiva para explorar los personajes más icónicos de la saga, desde los valientes miembros de la Comunidad del Anillo hasta los temibles señores oscuros de Mordor. </p>
-    </div>
-
-    <div class="texto-centrado-peliculas">
-      <p>Aprende más sobre las películas</p>
-    </div>
-
-
-    <div class="peliculas">
+  
+    <p class="texto-centrado-peliculas">Aprende más sobre las películas</p>
+    
+    <nav class="peliculas">
       <img src="https://i.pinimg.com/564x/1f/90/fe/1f90feb940a015ecd3918df90e094b58.jpg" alt="Nombre de la imagen">
       <img src="https://i.pinimg.com/564x/ea/72/0f/ea720f5c160e5286df9ee3feb749e213.jpg" alt="Nombre de la imagen">
       <img src="https://i.pinimg.com/564x/df/1c/a6/df1ca6dddcc57ae659f9966d4d5f9fdf.jpg" alt="Nombre de la imagen">
-    </div>
+    </nav>
 
     </main>
 

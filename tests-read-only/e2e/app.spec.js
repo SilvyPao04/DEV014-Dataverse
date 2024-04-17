@@ -19,6 +19,7 @@ test.describe('Pagina interraciones', () => {
 
   const getSortOptions = async (page) => {
     const selectSortEl = await page.getByTestId('select-sort')
+    console.log('hay te va');
     let sortByProperty = await selectSortEl.getAttribute('name'); 
     const sortOrderEl = await page.$('[name="sort-order"]');
 
@@ -76,6 +77,8 @@ test.describe('Pagina interraciones', () => {
       expect(sortedValuesDesc).toEqual(sortedValuesAsc.reverse());
     });
 
+
+
     test('de descendente "desc" a ascendente "asc"', async ({ page }) => {
       await selectSortOrder(sortOrderEl,sortOptions.desc);
       const sortedValuesDesc = await getItempropValues(page, sortByProperty);
@@ -85,7 +88,7 @@ test.describe('Pagina interraciones', () => {
       const sortedValuesAsc = await getItempropValues(page, sortByProperty);
 
       expect(sortedValuesAsc).toEqual(sortedValuesDesc.reverse());
-    });
+    }); 
   });
 
   test.describe('filter', () => {
@@ -152,4 +155,5 @@ test.describe('Pagina interraciones', () => {
       expect(clearLiElements.length).toEqual(originalLis.length);
     });
   });
+  
 });

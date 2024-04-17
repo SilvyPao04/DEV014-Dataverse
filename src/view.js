@@ -25,6 +25,11 @@ export const renderItems = (data) => {
     liElement.setAttribute("itemtype", "actors");
     liElement.setAttribute("itemscope","")
     
+    // Añadir atributos itemprop a los elementos correspondientes
+    liName.setAttribute("itemprop", "name");
+    liShortDescription.setAttribute("itemprop", "description");
+    liDetails.setAttribute("itemprop", "details");
+    
     // Agregar los elementos al <li> en el orden deseado
     liElement.appendChild(liName); // Nombre arriba
     liElement.appendChild(liShortDescription); // Descripción corta arriba

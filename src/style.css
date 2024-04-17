@@ -16,23 +16,23 @@ header {
     color: #CBB279;
     padding: 10px;
     display: flex;
-    align-items: center;
     position: sticky;
     top: 0px;
+    font-size: 16px;
+    align-items: center;
 }
 
-.logo img {
+.logo {
     width: 70px;
     height: 70px;
     margin: 10px;
 }
 
-h1 {
-    text-align: center;
-    color:  #CBB279;
-    font-size: 20px;
-    margin: 5px;
+header h1 {
+    display: flex; 
+    align-items: center; 
 }
+
 
 h2 {
     text-align: center;
@@ -67,14 +67,13 @@ h3 {
     font-size: 18px;
     flex-wrap: wrap;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 .empty-state{
     background-color: #000000;
     color: white;
     font-weight: normal;
-    font-size: 23px;
+    font-size: 24px;
     text-align: center;
     border: solid 2px;
     border-radius: 10px;
@@ -210,22 +209,14 @@ footer {
 /* Media queries para hacer la interfaz responsive */
 @media (max-width: 768px) {
     /* Estilos para pantallas más pequeñas */
-    .logo img {
+    .logo {
         width: 50px;
         height: 50px;
         margin: 5px;
     }
 
-    h1 {
-        font-size: 16px;
-    }
-
-    nav a{
-        font-size: 14px;
-    }
-
-    #suscribirse{
-        font-size: 16px;
+    header h1 {
+        font-size: 12px;
     }
 
     h2 {
@@ -246,6 +237,10 @@ footer {
         font-size: 16px;
     }
 
+    .empty-state{
+        font-size: 16px;
+        padding: 16px;
+    }
     .item {
         width: calc(100% - 2rem);
         max-width: 160px;

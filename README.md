@@ -142,10 +142,10 @@ El uso combinado de HTML, CSS, JavaScript y Jest nos ha proporcionado las herram
 Este proyecto fue diseñado y desarrollado en dupla, donde cada una aportó su conocimiento y experiencia para lograr un resultado exitoso. A continuación, presentamos nuestras contribuciones:
 
 ## Equipo de Diseño y Desarrollo
-- Malu Huillca 
-  - GitHub: [Enlace al GitHub de Malú](https://github.com/maluhuillcaelguera)
 - Silvia Pineda
   - GitHub: [Enlace al GitHub de Silvia](https://github.com/SilvyPao04)
+- Malu Huillca 
+  - GitHub: [Enlace al GitHub de Malú](https://github.com/maluhuillcaelguera)
 
 Hemos trabajado en conjunto para llevar a cabo todas las etapas de este proyecto, desde el diseño de la interfaz hasta el desarrollo de las funcionalidades, garantizando un resultado de alta calidad.
 
