@@ -34,7 +34,7 @@ Dataverse es una aplicación web que te permite descubrir y aprender sobre los p
 
 ## Funcionalidades
 1. **Visualización de Datos:** Muestra detallada de cada personaje, incluyendo su nombre, descripción corta, imagen y datos clave como raza, edad, estatura y año de nacimiento.
-2. **Filtrado:** Permite filtrar los personajes por raza, edad, estatura y año de nacimiento.
+2. **Filtrado:** Permite filtrar los personajes por raza y edad.
 3. **Ordenado:** Posibilidad de ordenar los personajes de forma ascendente o descendente según el nombre.
 4. **Cálculo Estadístico:** Calcula el promedio de edad de los personajes con datos de edad conocidos.
 
@@ -48,17 +48,31 @@ Dataverse es una aplicación web que te permite descubrir y aprender sobre los p
 3. **Usuario:** Como curioso, quiero calcular la edad promedio de los personajes para tener una idea general de su edad.
    - **Criterio de Aceptación:** Al hacer clic en el botón "Mostrar Promedio de las Edades", se muestra el valor numérico del promedio de edad.
 
-4. **Usuario:** Como aficionado a la historia, quiero filtrar los personajes por estatura para comparar los más altos.
-   - **Criterio de Aceptación:** Al seleccionar "2 metros o más" en el filtro de estatura, se muestran solo los personajes que miden 2 metros o más.
+4. **Usuario:** Como aficionado a la historia, quiero filtrar los personajes por edad para comparar los más viejos.
+   - **Criterio de Aceptación:** Al seleccionar "2000 años o más" en el filtro de edad, se muestran solo los personajes que tienen 2000 años o más.
 
 ## Definición de Terminado
 El proyecto se considera terminado cuando:
 
 - Se pueden visualizar los datos de los personajes correctamente.
-- Los filtros de raza, edad, estatura y año de nacimiento funcionan sin errores.
+- Los filtros de raza y edad funcionan sin errores.
 - El ordenado de los personajes por nombre funciona correctamente en ambas direcciones.
 - La función de cálculo estadístico muestra el promedio de edad correctamente.
 - Todos los tests unitarios y de integración pasan correctamente, asegurando el funcionamiento adecuado de todas las funcionalidades del proyecto.
+
+# Problemas Detectados en Tests de Usabilidad
+
+Durante el desarrollo de nuestro proyecto, identificamos y corregimos varios problemas a través de tests de usabilidad. Estos son algunos de los problemas más relevantes que pudimos haber detectado y solucionado:
+
+1. **Navegación Confusa:** Los usuarios podrían haber experimentado dificultades al encontrar ciertas funcionalidades o al navegar entre las diferentes secciones de la aplicación. Solucionamos este problema reorganizando la estructura de navegación de nuestros filtros.
+
+2. **Problemas de Interfaz en Dispositivos Móviles:** Durante las pruebas de usabilidad en dispositivos móviles, observamos que algunos elementos de la interfaz no se mostraban correctamente o eran difíciles de usar debido al tamaño reducido de la pantalla. Implementamos ajustes en el diseño responsive para mejorar la experiencia de navegación en dispositivos móviles.
+
+3. **Tiempo de Carga Lento:** Si la aplicación presentaba tiempos de carga prolongados, esto habría afectado negativamente la experiencia del usuario. Optimizamos el rendimiento de la aplicación y redujimos los tiempos de carga para una experiencia más rápida y fluida.
+
+---
+Mediante la identificación y corrección de estos problemas, logramos mejorar significativamente la usabilidad y la experiencia general de nuestra aplicación.
+
 
 # Diseño de Interfaz y Prototipos
 
@@ -147,7 +161,7 @@ Este proyecto fue diseñado y desarrollado en dupla, donde cada una aportó su c
 - Malu Huillca 
   - GitHub: [Enlace al GitHub de Malú](https://github.com/maluhuillcaelguera)
 
-Hemos trabajado en conjunto para llevar a cabo todas las etapas de este proyecto, desde el diseño de la interfaz hasta el desarrollo de las funcionalidades, garantizando un resultado de alta calidad.
+Hemos trabajado en conjunto para llevar a cabo todas las etapas de este proyecto, desde el diseño de la interfaz, el desarrollo de las funcionalidades hasta el de las pruebas unitarias, garantizando un resultado de alta calidad.
 
 ---
 
@@ -156,7 +170,7 @@ El trabajo en equipo y la colaboración han sido fundamentales para el éxito de
 # Cierre del Proyecto
 ¡Hemos llegado al final de nuestro emocionante viaje por Dataverse, el universo de "El Señor de los Anillos"! 
 
-Queremos agradecer a nuestros usuari@s por su entusiasmo y curiosidad al explorar el mundo de Tolkien a través de nuestra aplicación.
+Queremos agradecer a nuestr@s usuari@s por su entusiasmo y curiosidad al explorar el mundo de Tolkien a través de nuestra aplicación.
 
 Este proyecto representa el esfuerzo conjunto de un equipo comprometido con la excelencia y la innovación. Esperamos que disfrutes de tu experiencia en Dataverse y que te sumerjas aún más en las fascinantes historias y personajes de "El Señor de los Anillos".
 

@@ -27,7 +27,7 @@ export const filterData2 = (data, filterBy, value) => {
   return resultadoFiltro2
 }
 
-export const filterData3 = (data, filterBy, value) => {
+/*export const filterData3 = (data, filterBy, value) => {
   let resultadoFiltro3 = [];
 
   resultadoFiltro3 = data.filter((element) => {
@@ -70,24 +70,42 @@ export const filterData4 = (data, filterBy, value) => {
   }
 
   return resultadoFiltro4;
-};
-
-
-
+};*/
 
 //Lógica para la función "Ordenar"
 // Función para filtrar y ordenar datos de acuerdo al criterio especificado.
 export const sortData = (data, sortBy, sortOrder) => {
-  return data.sort((a, b) => {
-    if (sortOrder === 'asc') {
-      return a[sortBy] > b[sortBy] ? 1 : -1;
-    } else if (sortOrder === 'desc') {
-      return a[sortBy] < b[sortBy] ? 1 : -1;
-    } else {
-      return 0;
-    }
-  });
-};
+  
+  // Verificar el tipo de orden especificado
+  if (sortOrder === 'asc') {
+    
+    // Ordenar los datos de acuerdo a la propiedad especificada
+    return data.sort((a, b) => {
+      if (a[sortBy] < b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
+        return -1; // Retorna -1 si 'a' debe estar antes que 'b'
+      }
+      if (a[sortBy] > b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
+        return 1; // Retorna 1 si 'a' debe estar después que 'b'
+      }
+      return 0; // Retorna 0 si los elementos son iguales
+    });
+  }
+  
+  // Si es orden descendente (Z - A)
+  
+  // Ordenar los datos de acuerdo a la propiedad especificada y luego revertir el orden
+  if (sortOrder === 'desc') {
+    return data.sort((a, b) => {
+      if (a[sortBy] < b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
+        return 1; // Retorna 1 si 'a' debe estar antes que 'b' (inverso para orden descendente)
+      }
+      if (a[sortBy] > b[sortBy]) { // Compara las propiedades de los objetos 'a' y 'b'
+        return -1; // Retorna -1 si 'a' debe estar después que 'b' (inverso para orden descendente)
+      }
+      return 0; // Retorna 0 si los elementos son iguales
+    });
+  }
+}
 
 //Lógica para la función calcular
 export const computeStats = (data) => {

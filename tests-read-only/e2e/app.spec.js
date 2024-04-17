@@ -19,7 +19,6 @@ test.describe('Pagina interraciones', () => {
 
   const getSortOptions = async (page) => {
     const selectSortEl = await page.getByTestId('select-sort')
-    console.log('hay te va');
     let sortByProperty = await selectSortEl.getAttribute('name'); 
     const sortOrderEl = await page.$('[name="sort-order"]');
 
