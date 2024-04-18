@@ -29,7 +29,7 @@ describe ('Filtrar la data por Raza',()=>{
           "height": "1.4m",
           "yearOfBirth": 2980
         }
-      }, 
+      },  
     ];
     expect(filterData(fakeData, "race", "Hobbit")).toEqual(resultadoDeFiltros);
   });
